@@ -1,4 +1,4 @@
-Team Name: TAAJ
+Team Name: TAAJ <br>
 Team Members: Tammy Lee, Allison Patacsil, Amanda Hittelman, Janselle Justo
 
 ## Project Proposal
@@ -17,5 +17,33 @@ This storyboard is about a therapist who wants to help her young patients more e
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/storyboard-1.png)
 
 ## Storyboard #2
+This storyboard illustrates how the web-app will get kids excited to talk about their feelings.
+![](https://github.com/lee-tammy/COGS121/blob/master/images/storyboard.jpg)
 
 ## Prototype #1
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_001.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_002.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_003.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_004.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_005.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_006.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_007.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_008.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_009.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_010.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_011.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_012.png)
+
+## Prototype #2
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_001.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_002.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_003.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_004.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_005.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_006.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_007.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_008.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_009.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_010.png)
+
+
