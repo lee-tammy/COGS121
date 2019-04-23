@@ -35,15 +35,18 @@ This storyboard illustrates how the web-app will get kids excited to talk about 
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-1/prototype-1_012.png)
 
 ## Prototype #2
-![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_001.png)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_002.png)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_003.png)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_004.png)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_005.png)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_006.png)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_007.png)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_008.png)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_009.png)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/Prototype-2_010.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-01.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-02.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-03.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-04.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-05.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-06.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-07.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-08.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-09.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-10.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-11.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/prototype-2/prototype-2-12.png)
+
 
 
