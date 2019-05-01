@@ -6,7 +6,7 @@ We have decided to keep the same app idea of creating a mental health tracker fo
 
 # Screenshots of UI Skeleton Webpages
 ### Home Home (Screen #1)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-2/home-home-complete.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-2/home-home-completed.png)
 
 ## Therapist POV
 
