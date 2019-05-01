@@ -11,7 +11,7 @@ We have decided to keep the same app idea of creating a mental health tracker fo
 ## Therapist POV
 
 ### Therapist Home (Screen #2)
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-2/therapist.png)
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-2/therapist-home-ui.png)
 
 ### Therapist Updates
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-2/updates.png)
