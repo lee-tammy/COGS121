@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*
+Font Names
+
+font-family: "Helvetica Nueue", serif;
+font-family: "Open Sans", serif;
+font-family: "Futura", serif;
+
+*/
+
+/*
+Color Names
+
+White:
+	#FCFDFD
+Dark Gray:
+	#474747
+Bright green:
+	#21C293
+Darker Green:
+	#399C7D
+Lighter Green: 
+	#8BCF62
+Yellow:
+	#F8CB43
+Orange:
+	#F97C2C
+Light Blue:
+	#87B6D8
+Bright Blue:
+	#71D0D7
+Purple;
+	#6E88FF
+*/
+
+
+/*General*/
+#center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#menu {
+	font-family: "Futura", serif;
+	color: #FCFDFD;
+	font-size: 1000%;
+}
+
+
+/*Login_Page*/
+#login-background {
+	background: linear-gradient(180deg, #F8CB43 20%, #71D0D7 20%);
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+
+#login-welcome{
+	font-family: "Futura", serif;
+	font-size: 500%;
+
+}
+
+#login-aminals{
+	font-family: "Futura", serif;
+	color: #FCFDFD;
+	font-size: 1000%;
+
+}
+
+#login-image{
+	width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#login-ima{
+	font-size: 1000%;
+	color: #474747;
+	font-family: "Helvetica", serif;
+	margin-left: 25%;
+}
+
+.login-button a:link,
+.login-button a:visited,
+.login-button a:hover
+.login-button, .button{
+	color: #FCFDFD;
+	font-size: 800%;
+	text-align: center;
+	font-family: "Futura", serif;
+	text-decoration: none;
+
+	border-style: solid;
+	border-width: 20px;
+	border-radius: 30px;
+	border-color: #FCFDFD;
+
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 50;
+	padding-bottom: 50;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 75;
+}
+
+
+
+
