@@ -44,22 +44,33 @@ Purple;
 
 #menu {
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	background-color: #21C293;
 	font-family: "Futura", serif;
 	font-size: 800%;
 	color: #FCFDFD;
+
+	flex-wrap: nowrap;
+	padding-top: 100px;
+	margin-bottom: 100px;
 }
 
 #menu-home {
-	width: 50%;
-	height: 50%;
+	height: 12%;
 
-	margin: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
 }
 
 #menu-profile {
-	height: 45%;
+	height: 10%;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
 }
 
 #greeting {
@@ -67,6 +78,7 @@ Purple;
 	font-size: 800%;
 	color: #474747;
 	margin-left: 15%;
+	margin-bottom: 100px;
 }
 
 #q-format { 
@@ -196,6 +208,9 @@ Purple;
 	margin-bottom: 75;
 }
 
+.therapist-home-icon{
+	height: 10%;
+}
 
 
 
