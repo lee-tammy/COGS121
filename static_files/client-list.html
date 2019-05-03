@@ -6,14 +6,14 @@
 <script src="jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 
-let clientNames = ""; 
-let clientUsernames; 
+let clientNames = "";
+let clientUsernames;
 
 $(document).ready(() => { //runs anon fxn when doc is fully loaded
- 
+
   $.ajax({ //the one parameter that ajax takes has many elements
       url: "client-list",//the url we want to access
-      type: "GET", //type 
+      type: "GET", //type
       dataType: "json", //parses json into native js object
       success: (users) => {//when ajax succeeds
         clientUsernames = users;
@@ -23,23 +23,24 @@ $(document).ready(() => { //runs anon fxn when doc is fully loaded
   /*clicked items*/
   $("#see-more").click(() => {
     clientUsernames.forEach(createClientList);
-    function createClientList(value) {        
-      $.ajax({ 
+    function createClientList(value) {
+      $.ajax({
         url: "/client-profile/" + value,
-        type: "GET",  
+        type: "GET",
         dataType: "json",
         success: (currentName) => {
           clientNames += '<a href="/client-profile.html">';
           buildClientList(currentName.firstName + " " + currentName.lastName + "</a><br>");
+          $("#client-names").html(clientNames);
         }
       });
     };
 
     function buildClientList(name) {
-      clientNames += name; 
+      clientNames += name;
     };
 
-    $("#client-names").html(clientNames);   
+    //$("#client-names").html(clientNames);
   }
   );
 });
