@@ -5,9 +5,15 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
   </head>
 
   <body>
+      
+      
     <div id="menu" class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
@@ -27,7 +33,7 @@
     </div>
 
     <div id="hello-doctor">
-      <h3 id="greeting">Hello<br>Dr. Johnson!</h3>
+      <h3 id="greeting" >Hello<br>Dr. Johnson!</h3>
       <p id="q-format">What would you like to do today?</p>
     </div>
 
@@ -43,6 +49,11 @@
     <div class="signout-button">
       <a href="login.html" >Sign Out</a>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="js/login.js"></script>
+    <script src="js/therapist-home.js"></script>
   </body>
 
 </html>

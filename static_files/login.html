@@ -2,11 +2,18 @@
 
 <html>
 
-  <head>
+  <head> 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
+    
+    
   </head>
 
   <body id="login-background">
+    
     <h1 id="login-welcome">Welcome to</h1>
     <h1 id="login-aminals">aminals!</h1>
 
@@ -19,13 +26,19 @@
     </div>
 
     <div id="client-type">
-      <div class="login-button"><a href="client-home.html">Patient</a></div>
+      <div class="login-button">
+        Username: <input type="text" id="user-name" name="user-name"><br>
+        <button class="log-in" id="log-in" type="button">Log In</button>
+      </div>
       <br>
-      <div class="login-button"><a href="therapist-home.html">Therapist</a></div>
+      <button class="reset-database" id="reset-database" type="button">Reset Database</button>
     </div>
 
     <form id="login-input">
     </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/therapist-home.js"></script>
   </body>
 
 </html>
