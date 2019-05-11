@@ -144,11 +144,18 @@ Purple;
 	margin-right: auto;
 }
 
-#login-ima{
-	font-size: 1000%;
+#input{
+	font-size: 250%;
 	color: #474747;
 	font-family: "Helvetica", serif;
 	margin-left: 25%;
+	display: inline-block;
+	
+}
+
+#user-name{
+	margin: 0;
+    padding: 0;
 }
 
 .login-button a:link,
