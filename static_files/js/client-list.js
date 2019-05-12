@@ -19,14 +19,18 @@ $(document).ready(()=>{
     $('#see-more').click(() => {
       database.ref('users/').once('value', (snapshot) => {
         const data = snapshot.val();
-        const usernames = Object.keys(data);
+        const usernames = Object.keys(data); // holds all the usernames (clients + therapists)
 
+        /* loops through each of the profiles and gets their first and last name */
         for(const u of usernames){
           let name = document.createTextNode(data[u].firstName + " " + data[u].lastName);
 
-          document.getElementById('client-names').appendChild(name);
-          let br = document.createElement("br");
-          document.getElementById('client-names').appendChild(br);
+          /* only clients are added to the client list */
+          if(data[u].accountType == "client"){
+            document.getElementById('client-names').appendChild(name);
+            let br = document.createElement("br");
+            document.getElementById('client-names').appendChild(br);
+          }
         }
       });
 
