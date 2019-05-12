@@ -16,6 +16,8 @@ $(document).ready(()=>{
     }
     const database = firebase.database();
 
+    const user = localStorage.getItem("user");
+
     $('#addClient').click(() => {
       const userName = $('#insertUserName').val();
       console.log("adding new client: " + userName);
@@ -29,6 +31,21 @@ $(document).ready(()=>{
           lastName: $('#insertLastName').val()
       });
 
+      let clients = [];
+      database.ref('users/' + user + "/clients").once("value", (snapshot)=>{
+        clients = snapshot.val()
+        clients.push(userName)
+        database.ref('users/' + user).update({
+          clients:clients
+        });
+      });
+
+      /*database.set('users/' + user + "/clients").set({
+        accountType: 'client',
+        firstName: $('#insertFirstName').val(),
+        gender: $('#insertGender').val(),
+        lastName: $('#insertLastName').val()
+      });*/
     });
 
 });
