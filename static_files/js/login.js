@@ -88,10 +88,7 @@ $(document).ready(()=>{
 
 
 $("#reset-database").click(()=>{
-  console.log('hello')
-    database.ref("users/").remove();
-    console.log('hello')
-    database.ref("currentUser/").remove();
+  database.ref("users/").remove();  
 });
 
 $("#log-in").click(()=>{
