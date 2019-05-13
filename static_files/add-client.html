@@ -3,29 +3,40 @@
 <html>
 
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
   </head>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="jquery-3.3.1.min.js"></script>
-  <script src="js/add-client.js"></script>
-
   <body>
-    <div id="top-menu">
-      <a id="back-button" href="client-profile.html">Back</a>
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="client-home.html"> 
+            <img id="menu-back" src="images/menu/back.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <p>aminals</p>
+        </div>
+        <div class="col-sm-4">        
+
+        </div>
+      </div>
     </div>
 
-    <p>Client Adding Page</p>
+    <p class="greeting2">Client Adding Page</p><br>
+    <div class="adding-client">
     <hr/>
-      Username: <input id="insertUserName" type="text"/>
-      First Name: <input id="insertFirstName" type="text"/>
-      Gender: <input id="insertGender" type="text"/>
-      Last Name: <input id="insertLastName" type="text"/>
+      Username: <input class="add-client-input" id="insertUserName" type="text"/><br>
+      First Name: <input id="insertFirstName" type="text"/><br>
+      Gender: <input id="insertGender" type="text"/><br>
+      Last Name: <input id="insertLastName" type="text"/><br>
       <button id="addClient">Insert into database</button>
-    <hr/>
+    <hr/></div>
 
     <!--<a id="add-client-button" href="client-list.html">Add Client</a>-->
   </body>
