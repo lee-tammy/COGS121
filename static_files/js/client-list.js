@@ -15,22 +15,23 @@ $(document).ready(()=>{
       firebase.initializeApp(firebaseConfig);
     }
     const database = firebase.database();
+    const user = localStorage.getItem("user");
 
     $('#see-more').click(() => {
-      database.ref('users/').once('value', (snapshot) => {
-        const data = snapshot.val();
-        const usernames = Object.keys(data); // holds all the usernames (clients + therapists)
+      console.log(user)
+      database.ref('users/' + user).once('value', (snapshot) => {
+        const clients = snapshot.val().clients;
+        console.log(clients)
 
         /* loops through each of the profiles and gets their first and last name */
-        for(const u of usernames){
-          let name = document.createTextNode(data[u].firstName + " " + data[u].lastName);
+        for(const i in clients){
+          let name = document.createTextNode(clients[i]);
 
           /* only clients are added to the client list */
-          if(data[u].accountType == "client"){
-            document.getElementById('client-names').appendChild(name);
-            let br = document.createElement("br");
-            document.getElementById('client-names').appendChild(br);
-          }
+          document.getElementById('client-names').appendChild(name);
+          let br = document.createElement("br");
+          document.getElementById('client-names').appendChild(br);
+          
         }
       });
 
