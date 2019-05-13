@@ -3,21 +3,36 @@
 <html>
 
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
   </head>
 
   <body>
-    <div id="top-menu">
-      <a href="client-home.html">Back</a>
-      <h2>Profile</h2>
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="client-home.html"> 
+            <img id="menu-back" src="images/menu/back.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <p>aminals</p>
+        </div>
+        <div class="col-sm-4">        
+
+        </div>
+      </div>
     </div>
 
     <div id="profile-info">
-      <!--
-      <img src="" alt=""> Insert profile photo here!
-      -->
-      <p>I am: Stephen Smith<br />
-         I am a: Male<br />
-         I was born on: 08/25/2010</p>
+      <img class="profile-image" src="images/profile.png"> <br>
+      <p class="profile-text">I am: </p> <p class="profile-text-insert">Stephen Smith</p><br>
+      <p class="profile-text">I am a: </p><p class="profile-text-insert">Male</p><br>
+      <p class="profile-text">I was born on: </p><p class="profile-text-insert">08/25/2010</p>
     </div>
   </body>
 

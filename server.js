@@ -3,6 +3,7 @@ const app = express(); //import express lib and assign it to this var (and insta
 
 app.use(express.static('static_files')); //we're going to use a special string to denote our static files w/i our directory where files requested should be accessed from
 
+
 const fakeDatabase = {
 	"stephensmith": {
 		age: 10,

@@ -19,19 +19,31 @@ $(document).ready(()=>{
   
     const database = firebase.database();
   
-    database.ref("users/tal066").set({
-      firstName:"Tammy",
-      lastName:"Lee",
-      gender:"female",
-      accountType:"therapist"
-    });
-    database.ref("users/milohilo").set({
-      firstName: "Miley",
-      lastName: "Cyrus",
-      gender:"female",
-      accountType:"client"
+    database.ref("users/milohilo").once("value", (snapshot)=>{
+
+      if(snapshot.val() == null){
+        database.ref("users/milohilo").set({
+          firstName: "Miley",
+          lastName: "Cyrus",
+          gender:"female",
+          accountType:"client"
+        });
+      }
     });
     
+    database.ref("users/tal066").once("value", (snapshot)=>{
+      if(snapshot.val() == null){
+        database.ref("users/tal066").set({
+          firstName:"Tammy",
+          lastName:"Lee",
+          gender:"female",
+          accountType:"therapist",
+          clients:["milohilo"]
+        });
+      }
+    });
+
+
     let provider = new firebase.auth.GoogleAuthProvider();
 
     // Google sign in popups when the sign in button is clicked
@@ -88,10 +100,7 @@ $(document).ready(()=>{
 
 
 $("#reset-database").click(()=>{
-  console.log('hello')
-    database.ref("users/").remove();
-    console.log('hello')
-    database.ref("currentUser/").remove();
+  //database.ref("users/").remove();  
 });
 
 $("#log-in").click(()=>{

@@ -3,7 +3,15 @@
 <html>
 
   <head>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
   </head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="js/add-client.js"></script>
 
   <body>
     <div id="top-menu">
@@ -11,8 +19,15 @@
     </div>
 
     <p>Client Adding Page</p>
+    <hr/>
+      Username: <input id="insertUserName" type="text"/>
+      First Name: <input id="insertFirstName" type="text"/>
+      Gender: <input id="insertGender" type="text"/>
+      Last Name: <input id="insertLastName" type="text"/>
+      <button id="addClient">Insert into database</button>
+    <hr/>
 
-    <a id="add-client-button" href="client-list.html">Add Client</a>
+    <!--<a id="add-client-button" href="client-list.html">Add Client</a>-->
   </body>
 
 </html>

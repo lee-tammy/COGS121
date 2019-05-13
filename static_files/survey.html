@@ -3,23 +3,71 @@
 <html>
 
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
   </head>
 
   <body>
-    <div id="top-menu">
-      <a id="home-button" href="client-home.html">Home Icon</a>
-      <a id="profile-button" href="user-profile.html">Profile Icon</a>
+     
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="therapist-home.html"> 
+            <img id="menu-home" src="general-menu-home.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <p>aminals</p>
+        </div>
+        <div class="col-sm-4">        
+          <a href="user-profile.html"> 
+            <img id="menu-profile" src="general-menu-person-icon.png">
+          </a>
+        </div>
+      </div>
     </div>
 
-    <h3>1/3 boxes fed to Coco!</h3>
 
-    <p>Page is unavailable. Evaluation questions start here.</p>
+    <h3>Finish this to feed Coco!</h3>
 
-    <div id="status-indicator">
-    </div>
+    Sleep was:<br>
+    <input type="radio" name="sleep" value="verybad"> Very Bad<br>
+    <input type="radio" name="sleep" value="bad"> Bad<br>
+    <input type="radio" name="sleep" value="somewhatbad"> Somewhat Bad<br>
+    <input type="radio" name="sleep" value="somewhatgood"> Somewhat Good<br>
+    <input type="radio" name="sleep" value="good"> Good<br>
+    <input type="radio" name="sleep" value="verygood"> Very Good<br><br>
 
-    <div id="question">
-    </div>
+    School was:<br>
+    <input type="radio" name="school" value="verybad"> Very Bad<br>
+    <input type="radio" name="school" value="bad"> Bad<br>
+    <input type="radio" name="school" value="somewhatbad"> Somewhat Bad<br>
+    <input type="radio" name="school" value="somewhatgood"> Somewhat Good<br>
+    <input type="radio" name="school" value="good"> Good<br>
+    <input type="radio" name="school" value="verygood"> Very Good<br><br>
+
+    What happened at school?<br>
+    <input type="textbox" id="school-indepth" name="school-indepth"><br><br>
+
+    My day was:<br>
+    <input type="radio" name="day" value="verybad"> Very Bad<br>
+    <input type="radio" name="day" value="bad"> Bad<br>
+    <input type="radio" name="day" value="somewhatbad"> Somewhat Bad<br>
+    <input type="radio" name="day" value="somewhatgood"> Somewhat Good<br>
+    <input type="radio" name="day" value="good"> Good<br>
+    <input type="radio" name="day" value="verygood"> Very Good<br><br>
+
+    Type a word that describes how you feel today!<br>
+    <input type="textbox" id="feeling" name="feeling"><br><br>
+
+    <button class="finish-survey" id="finish-survey" type="button">Finish</button><br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/survey.js"></script>
 
   </body>
 
