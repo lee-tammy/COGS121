@@ -3,14 +3,32 @@
 <html>
 
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
   </head>
 
   <body>
-    <div id="top-menu">
-      <a id="back-button" href="client-status.html">Back</a>
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="client-home.html"> 
+            <img id="menu-back" src="images/menu/back.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <p>aminals</p>
+        </div>
+        <div class="col-sm-4">        
+
+        </div>
+      </div>
     </div>
 
-    <p>This page would display a chart of the client's sleep status.</p>
+    <p class="greeting3">This page would display a chart of the client's sleep status.</p>
   </body>
 
 </html>

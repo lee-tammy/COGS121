@@ -3,21 +3,40 @@
 <html>
 
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
   </head>
 
   <body>
-    <div id="top-menu">
-      <a id="back-button" href="client-profile.html">Back</a>
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="client-home.html"> 
+            <img id="menu-back" src="images/menu/back.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <p>aminals</p>
+        </div>
+        <div class="col-sm-4">        
+
+        </div>
+      </div>
     </div>
 
+    <p class="greeting2">Evaluations (3)</p>
     <div id="list-of-evals">
-      <a id="sleep-eval" href="eval-page-sleep.html">Sleep</a>
-      <p>Friends<br />
-         Family<br />
-         More options...</p>
+      <div class="eval-button"><a id="sleep-eval" href="eval-page-sleep.html">Sleep</a></div>
+      <div class="eval-button"><a id="" href="#">Friends</a></div>
+      <div class="eval-button"><a id="" href="#">Family</a></div>
     </div>
 
-    <a id="change-eval" href="eval-selection.html">Change Evaluations</a>
+    <div class="orange-button">
+    <a id="change-eval" href="eval-selection.html">Change Evaluations</a></div>
   </body>
 
 </html>

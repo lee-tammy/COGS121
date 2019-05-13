@@ -3,18 +3,37 @@
 <html>
 
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
   </head>
 
   <body>
-    <div id="top-menu">
-      <a id="home-button" href="therapist-home.html">Home Icon</a>
-      <a id="settings" href="settings.html">Settings</a>
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="client-home.html"> 
+            <img id="menu-back" src="images/menu/back.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <p>aminals</p>
+        </div>
+        <div class="col-sm-4">        
+
+        </div>
+      </div>
     </div>
 
-    <p>This is the profile page of one of the clients!<br />
+    <p class="greeting3">This is the profile page of one of the clients!<br />
        Click on "Status" to see more!</p>
 
-    <a id="check-status" href="client-status.html">Status</a>
+    <div class="orange-button">
+      <a id="check-status" href="client-status.html">Status</a>
+    </div>
 
   </body>
 
