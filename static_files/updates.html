@@ -3,19 +3,35 @@
 <html>
 
   <head>
-      <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
-      <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
   </head>
 
   <body>
-    <div id="top-menu">
-      <a id="home-button" href="therapist-home.html">Home Icon</a>
      
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="therapist-home.html"> 
+            <img id="menu-home" src="general-menu-home.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <p>aminals</p>
+        </div>
+        <div class="col-sm-4">        
+          <a href="user-profile.html"> 
+            <img id="menu-profile" src="general-menu-person-icon.png">
+          </a>
+        </div>
+      </div>
     </div>
 
-    <p>Client updates will be listed here!</p>
+    <p class="greeting2">Client updates will be listed here!</p>
     <p id="td1"></p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
