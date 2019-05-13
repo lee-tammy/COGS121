@@ -43,6 +43,18 @@ $(document).ready(()=>{
       }
     });
 
+    database.ref("users/ta-eason").once("value", (snapshot)=>{
+      if(snapshot.val() == null){
+        database.ref("users/ta-eason").set({
+          firstName:"Eason",
+          lastName:"Chang",
+          gender:"male",
+          accountType:"therapist",
+          clients:[]
+        });
+      }
+    });
+
 
     let provider = new firebase.auth.GoogleAuthProvider();
 

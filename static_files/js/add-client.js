@@ -31,9 +31,13 @@ $(document).ready(()=>{
           lastName: $('#insertLastName').val()
       });
 
+      console.log(database.ref('users/' + userName))
+
       let clients = [];
       database.ref('users/' + user + "/clients").once("value", (snapshot)=>{
-        clients = snapshot.val()
+        if(snapshot.val() != null){
+          clients = snapshot.val()
+        }
         clients.push(userName)
         database.ref('users/' + user).update({
           clients:clients

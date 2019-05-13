@@ -18,7 +18,7 @@ $(document).ready(()=>{
 
     const user = localStorage.getItem("user");
     database.ref("users/" + user).once("value", (snapshot)=>{
-        $("#main-text").html("Hello " + snapshot.val().firstName + "!");
+        $("#client-g").html("Hello " + snapshot.val().firstName + "!");
     });
     
 });
