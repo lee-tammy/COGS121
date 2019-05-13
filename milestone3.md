@@ -63,15 +63,4 @@ Since Milestone 2, we have added a couple of HTML files to better handle the fut
 ### Settings
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-3/settings.png)
 
-# Comparison to Paper Prototypes
-We have decided to keep the main designs from our paper prototypes, which includes having separate experiences for the child/patient/client and the therapist. Most of the pages have stayed the same, in terms of function, but we changed the UI. We integrated the best aspects from each prototype and have incorporated a few new aspects:
-
-### Home home page: 
-We now prompt the user to choose if they are a patient or therapist, so that entering the app is more clear for the user.
-### Client List: 
-We made the experience for adding a client simpler by changing the button to be a “+”, which is easier to read and a universal signifier.  We also changed it so that when the therapist clicks on the client they are brought to the client’s profile instead of their status.
-### Client status:
-On this page, the therapist can see the list of evaluations that the child currently has, as well as having the ability to add new or remove evaluations. The idea that the therapist can change which evaluations (survey questions) they want to give the child is a major addition to our app.
-
-*Other pages that are not listed above stayed the same.*
 
