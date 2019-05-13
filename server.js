@@ -66,5 +66,3 @@ app.get('/client-profile/:username', (req, res) => {
 app.listen(3000, () =>{
   console.log('Server started at local host 3000');
 }); //to start a server
-
-

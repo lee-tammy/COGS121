@@ -3,16 +3,43 @@
 <html>
 
   <head>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/betterdoc_api.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
   </head>
 
   <body>
     <div id="top-menu">
-      <a id="back-button" href="client-status.html">Back</a>
+      <a id="back-button" href="eval-selection.html">Back</a>
     </div>
 
-    <p>This page shows a selection of topic questions to ask the client.</p>
+    <p>This page utilizes Yelp API to find local doctor businesses so that the
+    therapist can suggest experts for clients' needs.</p>
 
-    <a id="doc-search" href="doc-search.html">Recommend Doctor</a>
+    Specialty: <input type="text" id="specialty_uid"><br>
+    <input type="button" onclick="getDoctorResults()" value="Submit">
+
+    <div id="content-placeholder"></div>
+    <script id="docs-template" type="text/x-handlebars-template">
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Picture</th>
+            </thead>
+            <tbody>
+            {{#data}}
+            <tr>
+                <td><a href="{{attribution_url}}" target="_new">{{profile.first_name}} {{profile.last_name}}</a><br>
+                  <img src="{{ratings.0.image_url_small}}"></img></td>
+                <td>{{profile.title}}</td>
+                <td><img src="{{profile.image_url}}"></img></td>
+            </tr>
+            {{/data}}
+            </tbody>
+        </table>
+    </script>
+
   </body>
 
 </html>
