@@ -15,7 +15,7 @@ function getDoctorResults() {
   //paramters from text array is the following: name and specialty_uid
 
   /*BetterDoctor, Inc. API*/
-  var api_key = '912d03ce18bfff9d5c814dd70922a0e1';
+  var api_key = ''; / INSERT API HERE
 
   var resource_url = "https://api.betterdoctor.com/2016-03-01/doctors?specialty_uid=" + specialty
   + "&location=37.773%2C-122.413%2C100&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=" + api_key;
