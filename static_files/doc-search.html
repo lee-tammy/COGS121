@@ -3,7 +3,6 @@
 <html>
 
   <head>
-
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
@@ -13,7 +12,6 @@
     <script src="jquery-3.3.1.min.js"></script>
     <script src="js/betterdoc_api.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
-
   </head>
 
   <body>
@@ -33,11 +31,11 @@
       </div>
     </div>
 
-
-    <p>This page utilizes Yelp API to find local doctor businesses so that the
+    <p class="greeting3">This page utilizes BetterDoctors API to find local doctor businesses so that the
     therapist can suggest experts for clients' needs.</p>
 
-    Specialty: <input type="text" id="specialty_uid"><br>
+
+    Specialty: <input type="text" id="specialty_uid" value="pediatrician"><br>
     <input type="button" onclick="getDoctorResults()" value="Submit">
 
     <div id="content-placeholder"></div>
