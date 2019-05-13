@@ -3,52 +3,39 @@
 <html>
 
   <head>
-<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
-  </head>
-
-  <body>
-    <div id="menu" class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="client-home.html"> 
-            <img id="menu-back" src="images/menu/back.png">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <p>aminals</p>
-        </div>
-        <div class="col-sm-4">        
-
-        </div>
-      </div>
-    </div>
-
-    <p class="greeting3">This page shows a selection of topic questions to ask the client.</p>
-
-    <div class="orange-button">
-    	<a id="doc-search" href="doc-search.html">Recommend Doctor</a>
-    </div>
-=======
     <script src="jquery-3.3.1.min.js"></script>
     <script src="js/betterdoc_api.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
   </head>
 
   <body>
-    <div id="top-menu">
-      <a id="back-button" href="eval-selection.html">Back</a>
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="eval-selection.html">
+            <img id="menu-back" src="images/menu/back.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <p>aminals</p>
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+      </div>
     </div>
 
-    <p>This page utilizes Yelp API to find local doctor businesses so that the
+    <p class="greeting3">This page utilizes BetterDoctors API to find local doctor businesses so that the
     therapist can suggest experts for clients' needs.</p>
 
-    Specialty: <input type="text" id="specialty_uid"><br>
+
+    Specialty: <input type="text" id="specialty_uid" value="pediatrician"><br>
     <input type="button" onclick="getDoctorResults()" value="Submit">
 
     <div id="content-placeholder"></div>
@@ -72,7 +59,6 @@
         </table>
     </script>
 
->>>>>>> cad036ecf8288d6b3bcbbf859fc6552cb1119b13
   </body>
 
 </html>
