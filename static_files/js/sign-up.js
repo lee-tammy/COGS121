@@ -11,38 +11,39 @@ $(document).ready(()=>{
       appId: "1:364492185043:web:6cab76272a770512"
     };
   
+
     if (!firebase.apps.length) {
       firebase.initializeApp(firebaseConfig);
     }
-      const database = firebase.database();
+    const database = firebase.database();
 
-      $("#submit").click(()=>{
+    $("#create-acc").click(()=>{
   
-        const email = $('#email').val();
-        const gender = $("input[name='gender']:checked").val();
-        const accountType = $("input[name='acc-type']:checked").val();
-        console.log("hello")
-        console.log(database.ref().child('currentUser'))// THIS GETS PRINTED
-        database.ref("currentUser").once('value', (snapshot)=>{
+      const username = $("#username").val();
+      
+
+      database.ref('users/' + username).once('value', (snapshot)=>{
+        // If username doesn't exist, use it!
+        if(snapshot.val() == null){
+          const firstName = $('#first-name').val();
+          const lastName = $('#last-name').val();
+          const email = $('#email').val();
+          const gender = $("input[class='gender']:checked").val();
+          const accountType = "therapist"
+
+          database.ref('users/' + username).set({
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            gender: gender,
+            accountType: accountType
+          });
+          window.location.href = "login.html";
+          // If username does exist, alert the user to use a different one
+          }else{
             
-            console.log("HELLO im inside@") // THIS DOESNT GET PRINTED WTFF
-            user = snapshot.val();
-            console.log(user)
-     
-            database.ref("users/" + user.userId).set({
-              email: email,
-              gender: gender,
-              accountType: accountType
-            });
+            alert("Please use a different username");
+          }
         });
-        
-  
-        if(accountType == "therapist"){
-            window.location.href = 'client-home.html';
-        }else{
-            window.location.href = 'therapist-home.html';
-        }
-        
-  
-  });
+    });
 });

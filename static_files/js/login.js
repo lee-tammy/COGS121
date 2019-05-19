@@ -15,105 +15,13 @@ $(document).ready(()=>{
   };
 
 
-    firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
   
-    const database = firebase.database();
-  
-    database.ref("users/milohilo").once("value", (snapshot)=>{
+  const database = firebase.database();
 
-      if(snapshot.val() == null){
-        database.ref("users/milohilo").set({
-          firstName: "Miley",
-          lastName: "Cyrus",
-          gender:"female",
-          accountType:"client"
-        });
-      }
-    });
-    
-    database.ref("users/tal066").once("value", (snapshot)=>{
-      if(snapshot.val() == null){
-        database.ref("users/tal066").set({
-          firstName:"Tammy",
-          lastName:"Lee",
-          gender:"female",
-          accountType:"therapist",
-          clients:["milohilo"]
-        });
-      }
-    });
-
-    database.ref("users/ta-eason").once("value", (snapshot)=>{
-      if(snapshot.val() == null){
-        database.ref("users/ta-eason").set({
-          firstName:"Eason",
-          lastName:"Chang",
-          gender:"male",
-          accountType:"therapist",
-          clients:[]
-        });
-      }
-    });
-
-
-    let provider = new firebase.auth.GoogleAuthProvider();
-
-    // Google sign in popups when the sign in button is clicked
-    /*$("#sign-in").click(()=>{
-      firebase.auth().signInWithPopup(provider).then(function(result) {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        const token = result.credential.accessToken;
-        // The signed-in user info.
-        user = result.user;
-        
-        // checks if a user already exists in the database
-        console.log("this is it")
-        console.log(database.ref('users/' + user.uid))
-        console.log("currentUser")
-        console.log(database.ref('currentUser'))
-       
-        database.ref('users/' + user.uid).once('value', (snapshot)=>{
-          console.log(snapshot.val());
-          database.ref("currentUser/").set({
-            userId:user.uid
-          });
-          if (snapshot.val() !== null) {
-            userExistsCallback(user, true);
-          }else{
-            userExistsCallback(user, false);
-          }
-        });
-     
-      }).catch(function(error) {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.email;
-        // The firebase.auth.AuthCredential type that was used.
-        const credential = error.credential;
-        
-      }); 
-
-      
-    });*/
-
-   
-
-    
-
-      /*if(accountType == "therapist"){
-          window.location.href = 'client-home.html';
-      }else{
-          window.location.href = 'therapist-home.html';
-      }*/
-      
-
-
-
-$("#reset-database").click(()=>{
-  //database.ref("users/").remove();  
-});
+$("#sign-up").click(()=>{
+  window.location.href = "sign-up.html";
+})
 
 $("#log-in").click(()=>{
   userName = document.getElementById("user-name")

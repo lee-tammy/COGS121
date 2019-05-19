@@ -27,12 +27,9 @@ $(document).ready(()=>{
       database.ref('users/' + userName).set({
           accountType: 'client',
           firstName: $('#insertFirstName').val(),
-          gender: $('#insertGender').val(),
-          lastName: $('#insertLastName').val()
+          lastName: $('#insertLastName').val(),
+          gender: $('#insertGender').val()
       });
-
-      console.log(database.ref('users/' + userName))
-
       let clients = [];
       database.ref('users/' + user + "/clients").once("value", (snapshot)=>{
         if(snapshot.val() != null){
@@ -44,12 +41,6 @@ $(document).ready(()=>{
         });
       });
 
-      /*database.set('users/' + user + "/clients").set({
-        accountType: 'client',
-        firstName: $('#insertFirstName').val(),
-        gender: $('#insertGender').val(),
-        lastName: $('#insertLastName').val()
-      });*/
     });
 
 });
