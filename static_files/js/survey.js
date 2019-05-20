@@ -1,6 +1,6 @@
 $(document).ready(()=>{
     // Initialize Firebase
-  
+
     var firebaseConfig = {
       apiKey: "AIzaSyD3iiCraOvePJcqCUSQdEITTD0cjG2ArBw",
       authDomain: "taaj-cogs121-project.firebaseapp.com",
@@ -10,7 +10,7 @@ $(document).ready(()=>{
       messagingSenderId: "364492185043",
       appId: "1:364492185043:web:6cab76272a770512"
     };
-  
+
     if (!firebase.apps.length) {
       firebase.initializeApp(firebaseConfig);
     }
@@ -18,10 +18,25 @@ $(document).ready(()=>{
 
     const user = localStorage.getItem("user");
 
-    $("#finish-survey").click(()=>{
+    // Only display the evaluations that the therapist assigned
+    const key='users/' + user + '/evals';
+    database.ref(key).once('value', (snapshot) => {
+      const data = snapshot.val();
+      const evals = data.assigned;
+
+      for(i = 0; i < evals.length; i++){
+        document.getElementById(evals[i] + '-questions').style.display = "block";
+        console.log(evals[i]);
+      }
+
+    });
+
+    // STILL NEED TO SAVE THE ANSWERS TO FIREBASE
+
+    /*$("#finish-survey").click(()=>{
         const today = new Date();
         const prettyDate = today.getMonth() + "-" + today.getDate() + "-" + today.getFullYear();
-        
+
         database.ref("users/" + user + "/surveys/" + prettyDate).set({
             date:prettyDate,
             response1:$("input[name='sleep']:checked").val(),
@@ -31,6 +46,6 @@ $(document).ready(()=>{
             response5:$("#feeling").val(),
         });
         window.location.href = "client-home.html"
-    });
-    
+    });*/
+
 });
