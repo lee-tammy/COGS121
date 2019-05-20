@@ -26,6 +26,10 @@ $(document).ready(()=>{
     let profileLink = '<a href="client-profile.html#' + username + '"><img id="menu-back" src="images/menu/back.png"></a>';
     $('#back-to-profile').html(profileLink);
 
+    // create a link to the change client's evaluations page
+    let changeEvalLink = '<a href="eval-selection.html#' + username + '">Change Evaluations</a>';
+    $('#change-eval-link').html(changeEvalLink);
+
 
 
 });

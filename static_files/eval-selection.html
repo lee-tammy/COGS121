@@ -11,10 +11,27 @@
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
   </head>
 
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyD3iiCraOvePJcqCUSQdEITTD0cjG2ArBw",
+      authDomain: "taaj-cogs121-project.firebaseapp.com",
+      databaseURL: "https://taaj-cogs121-project.firebaseio.com",
+      projectId: "taaj-cogs121-project",
+      storageBucket: "taaj-cogs121-project.appspot.com",
+      messagingSenderId: "364492185043",
+      appId: "1:364492185043:web:6cab76272a770512"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="js/eval-selection.js"></script>
+
   <body>
     <div id="menu" class="container-fluid">
       <div class="row">
-        <div class="col-sm-4">
+        <div id="back-to-status" class="col-sm-4">
           <a href="client-status.html">
             <img id="menu-back" src="images/menu/back.png">
           </a>
@@ -30,6 +47,16 @@
 
 
     <p class="greeting3">This page shows a selection of topic questions to ask the client.</p>
+
+    <input type="checkbox" name="eval" value="sleep">Sleep<br>
+    <input type="checkbox" name="eval" value="school">School<br>
+    <input type="checkbox" name="eval" value="friends">Friends<br>
+    <input type="checkbox" name="eval" value="family">Family<br>
+    <input type="checkbox" name="eval" value="mood">Mood<br>
+    <input type="checkbox" name="eval" value="activities">Activities<br>
+    <input type="checkbox" name="eval" value="attention">Attention<br>
+
+    <input  id="change-evals" type="submit"><br>
 
     <div class="orange-button" >
     <a id="doc-search" href="doc-search.html">Recommend Doctor</a></div>
