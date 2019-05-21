@@ -22,13 +22,10 @@ $(document).ready(()=>{
     let segments = path.split('#');
     let username = segments[segments.length - 1];
 
+
     // create a link to the client's evaluations
     let statusLink = '<a href="client-status.html#' + username + '"><img id="menu-back" src="images/menu/back.png"></a>';
     $('#back-to-status').html(statusLink);
-
-    // create a link to the change client's evaluations page
-    //let changeEvalLink = '<a href="eval-selection.html#' + username + '">Change Evaluations</a>';
-    //$('#change-eval-link').html(changeEvalLink);
 
 
     // Displays the evaluations that are currently assigned to the client
@@ -57,16 +54,6 @@ $(document).ready(()=>{
         });
 
         $('.greeting3').html('Evaluations were changed to ' + assigned);
-
-        /*database.ref("users/" + user + "/surveys/" + prettyDate).set({
-            date:prettyDate,
-            response1:$("input[name='sleep']:checked").val(),
-            response2:$("input[name='school']:checked").val(),
-            response3:$("#school-indepth").val(),
-            response4:$("input[name='day']:checked").val(),
-            response5:$("#feeling").val(),
-        });
-        window.location.href = "client-home.html" */
     });
 
 
