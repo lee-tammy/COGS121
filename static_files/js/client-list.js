@@ -20,7 +20,7 @@ $(document).ready(()=>{
 
     //$('#see-more').click(() => {
     console.log(user)
-    database.ref('users/' + user).once('value', (snapshot) => {
+    database.ref('users/' + user).on('value', (snapshot) => {
       const clients = snapshot.val().clients;
       console.log(clients)
 

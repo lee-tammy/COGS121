@@ -30,7 +30,7 @@ $(document).ready(()=>{
       $(".greeting3").html('Name: ' + data.firstName + ' ' + data.lastName + '<br>' +
                            'Username: ' + username + '<br>' +
                            'Sex: ' + data.gender + '<br>' +
-                           'Age: ' + 'lol we need to add that');
+                           'Age: ' + data.age);
     });
 
     // create a link to the client's evaluations

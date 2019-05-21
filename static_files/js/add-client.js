@@ -28,7 +28,8 @@ $(document).ready(()=>{
           accountType: 'client',
           firstName: $('#insertFirstName').val(),
           lastName: $('#insertLastName').val(),
-          gender: $('#insertGender').val()
+          gender: $('#insertGender').val(),
+          age: $('#insertAge').val()
       });
       let clients = [];
       database.ref('users/' + user + "/clients").once("value", (snapshot)=>{
