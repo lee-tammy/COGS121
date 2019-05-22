@@ -35,7 +35,19 @@
     therapist can suggest experts for clients' needs.</p>
 
 
-    Specialty: <input type="text" id="specialty_uid" value="pediatrician"><br>
+    Specialty: <select id="specialty_uid">
+      <option value = 'family-psychologist'>Family Psychology</option>
+      <option value = 'group-psychotherapy-psychologist'>Group Psychology</option>
+      <option value = 'neuropathologist'>Neuropathology</option>
+      <option value = 'pediatric-dermotologist'>Pediatric Dermatology</option>
+      <option value = 'pediatric-phsysical-therapist'>Pediatric Physical Therapy</option>
+      <option value = 'pediatric-pulmonologist'>Pediatric Pulmonology</option>
+      <option value = 'pediatric-rheumatologist'>Pediatric Rheumatology</option>
+      <option value = 'rehabilitation-psychologist'>Rehabilitation Psychology</option>
+      <option value = 'school-psychologist'>School Psychology</option>
+      <option value = 'sleep-medicine-doctor'>Sleep Medicine</option>
+      <option value = 'speech-therapist'>Speech Therapy</option>
+    </select><br>
     <input type="button" onclick="getDoctorResults()" value="Submit">
 
     <div id="content-placeholder"></div>
