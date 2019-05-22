@@ -35,6 +35,26 @@ $(document).ready(()=>{
                            'Age: ' + data.age);
     });
 
+    // create a link to the client's evaluations
+    let profileLink = '<a href="client-profile.html#' + username + '"><img id="menu-back" src="images/menu/back.png"></a>';
+    $('#back-to-profile').html(profileLink);
+
+    // create a link to the change client's evaluations page
+    let changeEvalLink = '<a href="eval-selection.html#' + username + '">Change Evaluations</a>';
+    $('#change-eval-link').html(changeEvalLink);
+    
+    // Loops through all assigned evaluations and creates button for each 
+    database.ref('users/' + username + '/evals/assigned').on('value', (snapshot)=>{
+      const assignedEvals = snapshot.val();
+
+      for(let i = 0; i < assignedEvals.length; i++){
+        let profileLink = '<a href="eval-page.html#' + username + '#' + assignedEvals[i] + '">';
+        $('#list-of-evals').append('<li>' + profileLink + assignedEvals[i]);;
+        
+      }
+    });
+
+    
 
     // Loops through all assigned evaluations and creates button for each
     database.ref('users/' + username + '/evals/assigned').on('value', (snapshot)=>{

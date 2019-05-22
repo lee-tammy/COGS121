@@ -23,9 +23,10 @@ $(document).ready(()=>{
     let username = segments[segments.length - 1];
 
 
+    
     // create a link to the client's evaluations
-    let statusLink = '<a href="client-profile.html#' + username + '"><img id="menu-back" src="images/menu/back.png"></a>';
-    $('#back-to-status').html(statusLink);
+    let profileLink = '<a href="client-profile.html#' + username + '"><img id="menu-back" src="images/menu/back.png"></a>';
+    $('#back-to-prof').html(profileLink);
 
 
     // Displays the evaluations that are currently assigned to the client
