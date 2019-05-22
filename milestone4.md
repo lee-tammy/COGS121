@@ -77,8 +77,3 @@ Since Milestone 3, we have worked to integrate the survey questions and selectio
 <b>Create a therapist account</b>: On the home page, the therapist will either sign
 in or create a new therapist account.  When they create an account, they will be
 added as a 'user' to our firebase database, and can then sign in with their username.
-
-# UI Changes
-Since Milestone 3,......
-
-# Screenshots of updated Webpages
