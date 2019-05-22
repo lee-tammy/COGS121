@@ -39,6 +39,9 @@ $(document).ready(()=>{
           const evals = data.assigned;  // get what evaluations the client is assigned
           answers = {}  // will hold all of the client's responses
 
+          const today = new Date();
+          const prettyDate = today.getMonth() + "-" + today.getDate() + "-" + today.getFullYear();
+
           // go through each assigned evaluation and grab all the client's responses
           // then put the clien'ts responses in our 'answers' object
           for(i = 0; i < evals.length; i++){
@@ -49,7 +52,7 @@ $(document).ready(()=>{
                 'quality': $("input[name='sleep-quality']:checked").val(),
                 'sleepy': $("input[name='sleep-sleepy']:checked").val()
               };
-              answers['sleep'] = sleepResponse;
+              database.ref('users/' + user + '/evals/' + evals[i] + '/' + prettyDate).set(sleepResponse);
             }
             else if(evals[i] == 'school'){
               schoolResponse = {
@@ -59,7 +62,7 @@ $(document).ready(()=>{
                 'hard': $("input[name='school-hard']:checked").val(),
                 'trouble': $("input[name='school-trouble']:checked").val()
               };
-              answers['school'] = schoolResponse;
+              database.ref('users/' + user + '/evals/' + evals[i] + '/' + prettyDate).set(schoolResponse);
             }
             else if(evals[i] == 'friends'){
               friendsResponse = {
@@ -67,27 +70,22 @@ $(document).ready(()=>{
                 'number': $("input[name='friends-number']").val(),
                 'happy': $("input[name='friends-happy']:checked").val()
               };
-              answers['friends'] = friendsResponse;
+              database.ref('users/' + user + '/evals/' + evals[i] + '/' + prettyDate).set(friendsResponse);
             }
             else if(evals[i] == 'family'){/* questions not written yet */}
             else if(evals[i] == 'mood'){
               moodResponse = {
                 'mood': $("input[name='mood']:checked").val()
               };
-              answers['mood'] = moodResponse;
+              database.ref('users/' + user + '/evals/' + evals[i] + '/' + prettyDate).set(moodResponse);
             }
             else if(evals[i] == 'activities'){/* questions not written yet */}
             else if(evals[i] == 'attention'){/* questions not written yet */}
+
           } // finish putting all the client's responses in object 'answers'
 
           console.log(answers); // check to see if 'answers' was properly constructed
 
-          // we will save the answers under the date
-          const today = new Date();
-          const prettyDate = today.getMonth() + "-" + today.getDate() + "-" + today.getFullYear();
-
-          // put the client's answers in firebase
-          database.ref('users/' + user + '/evals/' + prettyDate).set(answers);
 
           window.location.href = "client-home.html"; // bring the client back to the home page
         });
