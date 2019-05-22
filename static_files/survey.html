@@ -30,13 +30,11 @@
         </div>
       </div>
     </div>
-
+    <div class="greeting">Finish this to feed Coco! </div>
     <div class="general-q">
 
-    Finish this to feed Coco! <br><br>
-
-    <div id="sleep-questions" style="display: none">
-      SLEEP<br>
+    <div class="survey-title" id="sleep-questions" style="display: none">
+      SLEEP<br><br>
       What time did you sleep last night?<br>
       <input type="time" name="sleep-time" value="20:00">
       <br><br>
@@ -46,49 +44,84 @@
       <br><br>
 
       How well did you sleep?<br>
-      <input type="radio" name="sleep-quality" value="super-well"> Super Well<br>
-      <input type="radio" name="sleep-quality" value="normal"> Normal<br>
-      <input type="radio" name="sleep-quality" value="not-very-well"> Not Very Well<br>
-      <input type="radio" name="sleep-quality" value="terribly"> Terribly
+      <input id="super-well" type="radio" name="sleep-quality" value="super-well"><label for="super-well">Super Well</label><br>
+      <input id="normal" type="radio" name="sleep-quality" value="normal"><label for="normal">Normal</label><br>
+      <input id="not-very-well" type="radio" name="sleep-quality" value="not-very-well"><label for="not-very-well">Not Very Well</label><br>
+      <input id="terribly" type="radio" name="sleep-quality" value="terribly"><label for="terribly">Terribly</label><br>
       <br><br>
 
       How sleepy did you feel during the day?<br>
-      <input type="radio" name="sleep-sleepy" value="energetic"> Energetic<br>
-      <input type="radio" name="sleep-sleepy" value="not-sleepy"> Not Sleepy<br>
-      <input type="radio" name="sleep-sleepy" value="kind-of-sleepy"> Kind of Sleepy<br>
-      <input type="radio" name="sleep-sleepy" value="very-sleepy"> Very Sleepy
+      <input id="energetic" type="radio" name="sleep-sleepy" value="energetic"><label for="energetic">Energetic</label><br>
+      <input id="not-sleepy" type="radio" name="sleep-sleepy" value="not-sleepy"><label for="not-sleepy">Not Sleepy</label><br>
+      <input id="kind-of-sleepy" type="radio" name="sleep-sleepy" value="kind-of-sleepy"><label for="kind-of-sleepy">Kind of Sleepy</label><br>
+      <input id="very-sleepy" type="radio" name="sleep-sleepy" value="very-sleepy"><label for="very-sleepy">Very Sleepy</label><br>
       <br><br>
     </div>
 
-    <div id="school-questions" style="display: none">
-      SCHOOL<br>
+    <div class="survey-title" id="school-questions" style="display: none">
+      SCHOOL<br><br>
       Do you complete your work on time?<br>
-      <input type="radio" name="school-ontime" value="yes"> Yes<br>
-      <input type="radio" name="school-ontime" value="no"> No
-      <br><br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <input id="school1Y" type="radio" name="school-ontime" value="yes"><label for="school1Y">Yes</label>
+          </div>
+          <div class="col-sm">
+            <input id="school1N" type="radio" name="school-ontime" value="no"><label for="school1N">No</label>
+          </div>
+        </div>
+      </div><br><br>
 
       Did you put off doing your work until the last second?<br>
-      <input type="radio" name="school-putoff" value="yes"> Yes<br>
-      <input type="radio" name="school-putoff" value="no"> No
-      <br><br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <input id="school2Y" type="radio" name="school-putoff" value="yes"><label for="school2Y">Yes</label>
+          </div>
+          <div class="col-sm">
+            <input id="school2N" type="radio" name="school-putoff" value="no"><label for="school2N">No</label>
+          </div>
+        </div>
+      </div><br><br>
 
       Do you enjoy class?<br>
-      <input type="radio" name="school-enjoy" value="yes"> Yes<br>
-      <input type="radio" name="school-enjoy" value="no"> No
-      <br><br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <input id="school3Y" type="radio" name="school-enjoy" value="yes"><label for="school3Y">Yes</label>
+          </div>
+          <div class="col-sm">
+            <input id="school3N" type="radio" name="school-enjoy" value="no"><label for="school3N">No</label>
+          </div>
+        </div>
+      </div><br><br>
 
       Are you classes difficult?<br>
-      <input type="radio" name="school-hard" value="yes"> Yes<br>
-      <input type="radio" name="school-hard" value="no"> No
-      <br><br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <input id="school4Y" type="radio" name="school-hard" value="yes"><label for="school4Y">Yes</label>
+          </div>
+          <div class="col-sm">
+            <input id="school4N" type="radio" name="school-hard" value="no"><label for="school4N">No</label>
+          </div>
+        </div>
+      </div><br><br>
 
       Did you get in trouble?<br>
-      <input type="radio" name="school-trouble" value="yes"> Yes<br>
-      <input type="radio" name="school-trouble" value="no"> No
-      <br><br>
-    </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <input id="school5Y" type="radio" name="school-trouble" value="yes"><label for="school5Y">Yes</label>
+          </div>
+          <div class="col-sm">
+            <input id="school5N" type="radio" name="school-trouble" value="no"><label for="school5N">No</label>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
 
-    <div id="friends-questions" style="display: none">
+    <div class="survey-title" id="friends-questions" style="display: none">
       FRIENDS<br>
       Are you having any fights in your friendships?<br>
       <input type="radio" name="friends-fights" value="yes"> Yes<br>
@@ -105,27 +138,25 @@
       <br><br>
     </div>
 
-    <div id="family-questions" style="display: none">
+    <div class="survey-title" id="family-questions" style="display: none">
       FAMILY<br>
       Need to add questions
       <br><br>
     </div>
 
-    <div id="mood-questions" style="display: none">
+    <div class="survey-title" id="mood-questions" style="">
       MOOD<br>
       How did you feel today?<br>
-      <input type="radio" name="mood" value="nervous"> Nervous<br>
-      <input type="radio" name="mood" value="sad"> Sad<br>
-      <input type="radio" name="mood" value="elated"> Elated<br>
-      <input type="radio" name="mood" value="lonely"> Lonely<br>
-      <input type="radio" name="mood" value="angry"> Angry<br>
-      <input type="radio" name="mood" value="bored"> Bored<br>
-      <input type="radio" name="mood" value="fatigued"> Elated<br>
-      <input type="radio" name="mood" value="selfhatred"> Self-hatred<br>
-      <input type="radio" name="mood" value="neutral"> Neutral<br>
-      <input type="radio" name="mood" value="scared"> Scared<br>
-      <input type="radio" name="mood" value="tired"> Tired
-      <br><br>
+      <input id="nervous" type="radio" name="mood" value="nervous"><label for="nervous">Nervous</label>
+      <input id="sad" type="radio" name="mood" value="sad"><label for="sad">Sad</label>
+      <input id="elated" type="radio" name="mood" value="elated"><label for="elated">Elated</label>
+      <input id="lonely" type="radio" name="mood" value="lonely"><label for="lonely">Lonely</label>
+      <input id="angry" type="radio" name="mood" value="angry"><label for="angry">Angry</label>
+      <input id="fatiqued" type="radio" name="mood" value="fatiqued"><label for="fatiqued">Fatiqued</label>
+      <input id="selfhatred" type="radio" name="mood" value="selfhatred"><label for="selfhatred">Self-Hatred</label>
+      <input id="neutral" type="radio" name="mood" value="neutral"><label for="neutral">Neutral</label>
+      <input id="scared" type="radio" name="mood" value="scared"><label for="scared">Scared</label>
+      <input id="tired" type="radio" name="mood" value="tired"><label for="tired">Tired</label><br><br>
     </div>
 
     <div id="activities-questions" style="display: none">

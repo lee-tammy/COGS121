@@ -4,6 +4,7 @@
 
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
@@ -12,24 +13,36 @@
   </head>
 
   <body>
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="login.html"> 
+            <img id="menu-back" src="images/menu/back.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <p>aminals</p>
+        </div>
+        <div class="col-sm-4">        
 
-    <a href="login.html">Go back   
-      </a><br>
- 
-        Username:
-          <input type="text" id="username" ><br>
+        </div>
+      </div>
+    </div><br>
+    <div class="signup">
+        Username:            <input type="text" id="username" ><br>
         First Name: 
           <input type="text" id="first-name" ><br>
         Last Name: 
-        <input type="text" id="last-name" ><br>
+        <input type="text" id="last-name" ><br><br>
         Gender: <br>
-          <input type="radio" class="gender" value="female">Female<br>
-          <input type="radio" class="gender" value="male">Male<br>
-          <input type="radio" class="gender" value="prefer-not-to-stay">Prefer not to say<br>
+          <input id="female" type="radio" class="gender" name="gender" value="female"><label for="female">Female</label><br>
+          <input id="male" type="radio" class="gender" name="gender" value="male"><label for="male">Male</label><br>
+          <input id="other" type="radio" class="gender" name="gender" value="prefer-not-to-stay"><label for="other">Other</label><br><br>
      
         Email: <input type="email" id="email"><br>
         
         <input class="border-button"type="submit" id="create-acc" value="Submit">
+      </div>
 
     
 
@@ -38,7 +51,7 @@
 
     <script src="js/sign-up.js"></script>
        
-    </body>
+  </body>
    
 
 

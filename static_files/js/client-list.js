@@ -32,8 +32,8 @@ $(document).ready(()=>{
           database.ref(key).on('value', (snapshot) => {
             const data = snapshot.val();
             /* create link to the client's profile */
-            let profileLink = '<a href="client-profile.html#' + clients[i] + '" class="profiles">';
-            $('#client-names').append('<li>' + profileLink + data.firstName + ' ' + data.lastName);
+            let profileLink = '<a style="color:#FCFDFD" href="client-profile.html#' + clients[i] + '" class="profiles">';
+            $('#client-names').append('<button class="client-name">'+"<img src='../images/profile-images/kid1.jpeg'><br>" + profileLink + data.firstName + ' ' + data.lastName + "</button><br>");
           });
 
 

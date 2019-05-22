@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+@font-face {
+	font-family: openSans;
+	src: url('https://fonts.googleapis.com/css?family=Open+Sans');
+}
 /*
 Font Names
 
@@ -40,6 +42,70 @@ Purple;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+
+
+input[type=radio]{
+	margin-left:10%;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	visibility: hidden;
+
+}
+
+input[type=radio]:checked + label{
+    color: #F97C2C;
+
+	border-style: solid;
+	border-width: 7px;
+	border-radius: 30px;
+	border-color: #F97C2C;
+
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+input[type=checkbox]{
+	margin-left:10%;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	visibility: hidden;
+
+}
+
+input[type=checkbox]:checked + label{
+    color: white;
+    background-color: #474747;
+
+	border-style: solid;
+	border-width: 7px;
+	border-radius: 30px;
+	border-color: #474747;
+
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+label {
+	font-family: "Futura", serif!important;
+	color: #474747;
+	border-style: solid;
+	border-width: 10px;
+	border-radius: 30px;
+	border-color: #474747;
+
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+input[type=text], input[type=email] {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #474747;
+	margin-right: 20px;
+	width: auto!important;
 }
 
 /*General-menu*/
@@ -84,15 +150,20 @@ Purple;
 /*general-text*/
 .greeting {
 	font-family: "Futura-Medium";
-	font-size: 900%;
+	font-size: 600%;
 	color: #474747;
-	margin-left: 15%;
+
 	margin-bottom: 100px;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center !important;
 }
 
 .greeting2 { 
 	font-family: "HelveticaNeue-Thin", serif;
-	font-size: 600%;
+	font-size: 400%;
 	text-align: center;
 	color: #474747;
 	margin-left: 15%;
@@ -104,8 +175,10 @@ Purple;
 	font-size: 400%;
 	text-align: center;
 	color: #474747;
-	margin-left: 5%;
-	margin-right: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center !important;
 	padding-top: 30px;
 
 }
@@ -114,7 +187,7 @@ Purple;
 .orange-button a:visited,
 .orange-button a:hover
 .orange-button, .button{
-	font-family: "Open Sans", serif;
+	font-family: "Open Sans" !important;
 	background-color: #F97C2C;
 	color: #FCFDFD;
 	font-size: 600%;
@@ -286,7 +359,7 @@ input[type=text] {
 	border-style: solid !important;
 	border-width: 20px !important;
 	border-radius: 30px !important;
-	border-color: #474747 !important;
+	border-color: #474747;
 
 	padding-left: 100px !important;
 	padding-right: 100px !important;
@@ -344,10 +417,10 @@ input[type=text] {
 	margin-right: 20% !important;
 }
 
-/* signup */
+/* sign-up */
 .signup { 
 	font-family: "HelveticaNeue-Thin", serif;
-	font-size: 600%;
+	font-size: 400%;
 	color: #474747;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -393,11 +466,41 @@ input[type=text] {
 	margin-bottom: 75;
 }
 
-/*client list */
+/*client-list */
 #add-client-icon{
 	width: 100px;
 	height: 100px;
 	margin-left: 80%;
+}
+
+#client-names{
+
+}
+
+.client-name{
+	font-size: 500%;
+	color: white!important;
+	background-color: #71D0D7;
+	display: block !important;
+	margin-left: auto;
+	margin-right:auto;	
+
+	border-style: solid;
+	border-width: 20px;
+	border-radius: 50px;
+	border-color: #71D0D7;
+
+	width: 600px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.client-name img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
 }
 
 /*adding client page*/
@@ -439,7 +542,7 @@ input[type=text] {
 .general-q {
 	font-size: 50px;
 	font-family: "HelveticaNeue-Thin", serif;
-	margin-left: 10%;
+
 }
 
 #finish-survey {
@@ -468,6 +571,11 @@ input[type=text] {
 }
 
 
-input[type=radio]{
-	margin-left:10%;
+.survey-title {
+	display: block !important;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center !important;
+
 }
