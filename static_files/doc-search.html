@@ -33,18 +33,21 @@
 
     <p class="greeting3">This page utilizes BetterDoctors API to find local doctor businesses so that the
     therapist can suggest experts for clients' needs.</p>
+    
+    <div class="greeting2" style="text-align:left">
+    Specialty: 
+    <select data-toggle="dropdown" aria-labelledby="dropdownMenuLink" class="specialty btn btn-secondary dropdown-toggle" id="specialty_uid">
 
-
-    Specialty: <select id="specialty_uid">
-      <option value = 'family-psychologist'>Family Psychology</option>
-      <option value = 'group-psychotherapy-psychologist'>Group Psychology</option>
-      <option value = 'neuropathologist'>Neuropathology</option>
-      <option value = 'pediatric-rheumatologist'>Pediatric Rheumatology</option>
-      <option value = 'rehabilitation-psychologist'>Rehabilitation Psychology</option>
-      <option value = 'sleep-medicine-doctor'>Sleep Medicine</option>
-      <option value = 'speech-therapist'>Speech Therapy</option>
-    </select><br>
-    <input type="button" id="read-button" value="Submit">
+        <option value = 'family-psychologist'>Family Psychology</option>
+        <option value = 'group-psychotherapy-psychologist'>Group Psychology</option>
+        <option value = 'neuropathologist'>Neuropathology</option>
+        <option value = 'pediatric-rheumatologist'>Pediatric Rheumatology</option>
+        <option value = 'rehabilitation-psychologist'>Rehabilitation Psychology</option>
+        <option value = 'sleep-medicine-doctor'>Sleep Medicine</option>
+        <option value = 'speech-therapist'>Speech Therapy</option>
+    </select><br><br>
+    <input style="text-align: center !important" type="button" id="read-button" value="Submit">
+    </div>
 
     <div id="content-placeholder"></div>
     <script id="docs-template" type="text/x-handlebars-template">

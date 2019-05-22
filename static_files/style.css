@@ -38,13 +38,26 @@ Purple;
 
 
 /*General*/
+
+
 #center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+input[type=button]{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-size: 50px;
+	color: 	#FCFDFD;
+	background-color: #399C7D;
+	border-style: solid;
+	border-width: 10px;
+	border-radius:30px;
+	border-color: #399C7D;
 
+}
 
 input[type=radio]{
 	margin-left:10%;
@@ -578,4 +591,14 @@ input[type=text] {
 
 	text-align: center !important;
 
+}
+
+
+/*doc-search*/
+.specialty {
+	font-size: 50px!important;
+	border-style: solid;
+	border-width: 20px;
+	border-radius: 30px;
+	border-color: #FCFDFD;
 }
