@@ -59,9 +59,10 @@ $(document).ready(()=>{
         });
       });
 
+      if(clients.indexOf(userName) !== -1){
+        window.location.href = "client-list.html"
+      }
 
-
-      
 
     });
 
