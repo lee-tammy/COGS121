@@ -20,26 +20,29 @@ $(document).ready(()=>{
 
     //$('#see-more').click(() => {
     console.log(user)
-    database.ref('users/' + user).on('value', (snapshot) => {
-      const clients = snapshot.val().clients;
-      console.log(clients)
+    database.ref('users/').on('value', (snapshot) => {
+      database.ref('users/' + user).on('value', (snapshot) => {
+        const clients = snapshot.val().clients;
+        console.log(clients)
 
-      /* loops through each of the profiles and gets their first and last name */
-      for(const i in clients){
+        /* loops through each of the profiles and gets their first and last name */
+        for(const i in clients){
 
-        const key = 'users/' + clients[i];
-        database.ref(key).once('value', (snapshot) => {
-          const data = snapshot.val();
-          /* create link to the client's profile */
-          let profileLink = '<a href="client-profile.html#' + clients[i] + '" class="profiles">';
-          $('#client-names').append('<li>' + profileLink + data.firstName + ' ' + data.lastName);
-        });
+          const key = 'users/' + clients[i];
+          database.ref(key).on('value', (snapshot) => {
+            const data = snapshot.val();
+            /* create link to the client's profile */
+            let profileLink = '<a href="client-profile.html#' + clients[i] + '" class="profiles">';
+            $('#client-names').append('<li>' + profileLink + data.firstName + ' ' + data.lastName);
+          });
 
 
         //document.getElementById('client-names').appendChild(name);
         //let br = document.createElement("br");
         //document.getElementById('client-names').appendChild(br);
-      }
+
+        }
+      });
     });
     //});
 

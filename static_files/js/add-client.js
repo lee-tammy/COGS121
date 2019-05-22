@@ -40,8 +40,14 @@ $(document).ready(()=>{
           lastName: $('#insertLastName').val(),
           gender: $('#insertGender').val(),
           age: $('#insertAge').val(),
-          evals: assigned
+          
       });
+
+      database.ref('users/' + userName + '/evals').set({
+        assigned
+    });
+
+
       let clients = [];
       database.ref('users/' + user + "/clients").once("value", (snapshot)=>{
         if(snapshot.val() != null){
