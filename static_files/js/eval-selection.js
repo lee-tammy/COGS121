@@ -33,7 +33,7 @@ $(document).ready(()=>{
     database.ref(key).once('value', (snapshot) => {
       const data = snapshot.val();
       console.log(data.assigned);
-      $('.greeting3').html('Current evaluations are ' + data.assigned);
+      $('#current-assigned').html('Current evaluations are ' + data.assigned);
     });
 
 
