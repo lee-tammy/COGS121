@@ -22,6 +22,16 @@ $(document).ready(()=>{
       const userName = $('#insertUserName').val();
       console.log("adding new client: " + userName);
 
+      // Adds the assigned evals to the database
+      let evals = ['sleep', 'school', 'friends', 'family', 'mood', 'activities', 'attention'];
+      let assigned = [];
+      for(i = 0; i < evals.length; i++){
+        let checked = $("input[value='" + evals[i] + "']:checked");
+        if(checked.length == 1){
+          assigned.push(evals[i]);
+        }
+      }
+
       // Getting the information from the text boxes and inserting
       // into firebase
       database.ref('users/' + userName).set({
@@ -29,7 +39,8 @@ $(document).ready(()=>{
           firstName: $('#insertFirstName').val(),
           lastName: $('#insertLastName').val(),
           gender: $('#insertGender').val(),
-          age: $('#insertAge').val()
+          age: $('#insertAge').val(),
+          evals: assigned
       });
       let clients = [];
       database.ref('users/' + user + "/clients").once("value", (snapshot)=>{
@@ -41,6 +52,10 @@ $(document).ready(()=>{
           clients:clients
         });
       });
+
+
+
+      
 
     });
 
