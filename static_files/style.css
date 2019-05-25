@@ -65,18 +65,24 @@ input[type=radio]{
 	margin-top: 5px;
 	visibility: hidden;
 
+
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+
 }
 
 input[type=radio]:checked + label{
     color: #F97C2C;
 
-	border-style: solid;
-	border-width: 7px;
-	border-radius: 30px;
-	border-color: #F97C2C;
+	background-color: #F8CB43;
 
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border: none;
 }
 
 input[type=checkbox]{
@@ -103,10 +109,8 @@ input[type=checkbox]:checked + label{
 label {
 	font-family: "Futura", serif!important;
 	color: #474747;
-	border-style: solid;
-	border-width: 10px;
+
 	border-radius: 30px;
-	border-color: #474747;
 
 	padding-left: 15px;
 	padding-right: 15px;
@@ -124,24 +128,28 @@ input[type=text], input[type=email] {
 /*General-menu*/
 #menu {
 	width: 100%;
-	height: 250px;
+	height: 230px;
 	background-color: #21C293;
 	font-family: "Futura", serif;
-	font-size: 800%;
+	font-size: 600%;
 	color: #FCFDFD;
 
 	flex-wrap: nowrap;
-	padding-top: 100px;
+	padding-top: 30px;
 	margin-bottom: 100px;
+	display: block !important;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #menu-home {
-	height: 100px;
+	height: 120px;
+	width: auto;
 
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 #menu-profile {
@@ -149,7 +157,7 @@ input[type=text], input[type=email] {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 #menu-back {
@@ -157,7 +165,7 @@ input[type=text], input[type=email] {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
+	margin-top: 35px;
 }
 
 /*general-text*/
@@ -226,10 +234,11 @@ input[type=text], input[type=email] {
 
 .signout-button a:link,
 .signout-button a:visited,
-.signout-button a:hover
-.signout-button, .button{
+.signout-button a:hover,
+.signout-button{
+	width: 300px;
 	color: #474747;
-	font-size: 500%;
+	font-size: 230%;
 	text-align: center;
 	font-family: "Futura", serif;
 	text-decoration: none;
@@ -239,14 +248,12 @@ input[type=text], input[type=email] {
 	border-radius: 30px;
 	border-color: #474747;
 
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 
 	display: block;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 100px;
 	margin-bottom: 75;
 }
@@ -325,6 +332,40 @@ input[type=text], input[type=email] {
 #user-name {
 	width: 100%;
 	height: 100px;
+	border: none;
+}
+
+.login-button {
+	border-style: solid;
+	border-width: 20px;
+	border-radius: 30px;
+	border-color: #FCFDFD;
+	background-color: 	#71D0D7;
+	font-family: "Futura", serif;
+	font-size: 60px;
+	color: white;
+
+	margin-top: 50px;
+	display: block!important;
+	margin-left: auto;
+	margin-right:auto;
+
+}
+
+.signup-button {
+	background-color: 	#71D0D7;
+	font-family: "Futura", serif;
+	font-size: 45px;
+	color: white;
+	outline: none;
+	border: none;
+	margin-top: 20px;
+	display: block!important;
+	margin-left: auto;
+	margin-right:auto;
+
+	text-decoration: underline;
+
 }
 
 input[type=text] {
@@ -387,36 +428,52 @@ input[type=text] {
 }
 
 /* Therapist Home */ 
+#list-icon{
+	height: 100px;
+	width: auto;
+}
+
+#star-icon{
+	height: 100px;
+	width: auto;
+}
+
 .therapist-home-button a:link,
 .therapist-home-button a:visited,
 .therapist-home-button a:hover
 .therapist-home-button, .button{
 	font-family: "Open Sans", serif;
+	font-size: 325%;
+	text-decoration: none;
+	color: #FCFDFD;
+	width: 1000px;
+	padding-left: 25px;
+	display: block!important;
+}
+
+
+.therapist-home-button{
+	display: flex;
+	flex-wrap: nowrap !important;
+	align-items: center!important;
+	justify-content: flex-end;
 	background-color: #6E88FF;
 	color: #FCFDFD;
-	font-size: 600%;
-	text-align: center;
-	text-decoration: none;
 
-	border-style: solid;
-	border-width: 20px;
+	width: 700px !important;
 	border-radius: 30px;
-	border-color: #FCFDFD;
 
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-left: 50px!important;
+	padding-right: 80px;
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
 
-	display: block;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-bottom: 50px;
 	margin-top: 100px;
-	margin-bottom: 75;
 }
 
 .therapist-home-icon{
-	height: 10%;
+	height: 100px;
 }
 
 
@@ -437,11 +494,12 @@ input[type=text] {
 	color: #474747;
 	margin-left: 5%;
 	margin-right: 5%;
+	border: none;
 }
 
-#gender-icon {
-	width: 100px;
-	height: 100px;
+.gender-icon {
+	width: auto;
+	height: 200px;
 }
 
 #acc-type,
@@ -491,23 +549,17 @@ input[type=text] {
 }
 
 .client-name{
-	font-size: 500%;
-	color: white!important;
-	background-color: #71D0D7;
+	font-family: "HelveticaNeue-Thin", serif;
 	display: block !important;
 	margin-left: auto;
 	margin-right:auto;	
 
-	border-style: solid;
-	border-width: 20px;
-	border-radius: 50px;
-	border-color: #71D0D7;
 
-	width: 600px;
+
+	width: 100%;
 	padding-left: 50px;
 	padding-right: 50px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 80px;
 }
 
 .client-name img {
