@@ -39,6 +39,41 @@ Purple;
 
 /*General*/
 
+/*icons*/
+#sleep-icon {
+	height: 100px !important;
+	width: 800px ;
+}
+
+#family-icon {
+	height: 90px !important;
+	width: 700px !important;
+}
+
+.eval-title {
+	display: inline-block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.eval-label {
+	flex-wrap: nowrap !important;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 30px !important;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 150px !important;
+	width: 450px !important;
+
+	background-color: #e8ebfc;
+}
+
+.select-evaluations{
+	align-items: center !important;
+}
 
 #center {
 	display: block;
@@ -86,24 +121,12 @@ input[type=radio]:checked + label{
 }
 
 input[type=checkbox]{
-	margin-left:10%;
-	margin-bottom: 5px;
-	margin-top: 5px;
 	visibility: hidden;
-
 }
 
 input[type=checkbox]:checked + label{
     color: white;
     background-color: #474747;
-
-	border-style: solid;
-	border-width: 7px;
-	border-radius: 30px;
-	border-color: #474747;
-
-	padding-left: 15px;
-	padding-right: 15px;
 }
 
 label {
