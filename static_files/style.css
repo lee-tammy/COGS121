@@ -545,7 +545,6 @@ input[type=text] {
 }
 
 #client-names{
-
 }
 
 .client-name{
@@ -553,8 +552,6 @@ input[type=text] {
 	display: block !important;
 	margin-left: auto;
 	margin-right:auto;	
-
-
 
 	width: 100%;
 	padding-left: 50px;
