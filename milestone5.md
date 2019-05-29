@@ -11,9 +11,8 @@ Since Milestone 4, we have done the following UI changes:
 1. Got rid of a webpage named "client-status.html" and moved the information from that webpage to another webpaged named "client-profile.html".
 2. Realigned any off center elements throughout the entirety of the UI
 3. Added custom icons for different lists in the surveys and evaluations. 
-4. Fix the UI for the webpage named "doc-search.html" for the dropdown menu and table.
-5. Fix the evaluation lists to make it more aesthetics.
-6. Create the final survey questions for the data visualizations.
+4. Fix the evaluation lists to make it more aesthetic.
+5. Create the final survey questions for the data visualizations.
 7. Implement data visualization of client status (explained more in "Data Visualizations").
 
 # Screenshots of updated Webpages
