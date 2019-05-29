@@ -69,9 +69,6 @@ Since Milestone 4, we have done the following UI changes:
 ### Evaluation Page - Sleep
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/eval-page-sleep.png)
 
-### Doctor Search
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/doc-search.png)
-
 ### Settings
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/settings.png)
 
