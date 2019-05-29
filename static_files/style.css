@@ -701,3 +701,48 @@ input[type=text] {
 #change-evals{
 	font-size: 50px !important;
 }
+
+
+/*client-profile*/
+.client-eval-icon {
+	height: 50px;
+	width: auto;
+
+	padding-right: 50px;
+}
+
+#list-of-evals {
+	align-items: center !important;
+}
+
+.assigned-evals a:link,
+.assigned-evals a:visited,
+.assigned-evals a:hover,
+.assigned-evals{
+	font-family: "Open Sans", serif;
+	background-color: #6E88FF;
+	color: #FCFDFD;
+	font-size: 50px;
+	text-align: center;
+	text-decoration: none;
+
+	width: 500px;
+
+	border-style: solid;
+	border-width: 20px;
+	border-radius: 30px;
+	border-color: #FCFDFD;
+
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 75;
+
+	align-content: flex-start;
+}

@@ -48,26 +48,12 @@ $(document).ready(()=>{
       const assignedEvals = snapshot.val();
 
       for(let i = 0; i < assignedEvals.length; i++){
-        let profileLink = '<a href="eval-page.html#' + username + '#' + assignedEvals[i] + '">';
-        $('#list-of-evals').append('<li>' + profileLink + assignedEvals[i]);;
+        let profileLink = '<a class="assigned-evals" href="eval-page.html#' + username + '#' + assignedEvals[i] + '">';
+        $('#list-of-evals').append(profileLink + "<img class='client-eval-icon' src='images/icons/" + assignedEvals[i] + ".png'>"+
+          assignedEvals[i] + "</a><br>");;
         
       }
     });
-
-    
-
-    // Loops through all assigned evaluations and creates button for each
-    database.ref('users/' + username + '/evals/assigned').on('value', (snapshot)=>{
-      const assignedEvals = snapshot.val();
-
-      for(let i = 0; i < assignedEvals.length; i++){
-        let profileLink = '<a href="eval-page.html#' + username + '#' + assignedEvals[i] + '">';
-        $('#list-of-evals').append('<li>' + profileLink + assignedEvals[i]);;
-      }
-    });
-
-        // <input id="sleep" type="checkbox" name="eval" value="sleep"><label class="eval-label container-fluid" for="sleep"><div class="row align-items-center"><img class="col-sm-3 align-self-center" id="sleep-icon" src="images/icons/sleep.png"><p class="eval-title col-sm-9 align-self-center">Sleep</p></div></label><br>  
-
 
     // create a link to evaluations selection page
     let evalLink = '<a href="eval-selection.html#' + username + '">Change Evaluations</a>';
