@@ -45,39 +45,71 @@ $(document).ready(()=>{
             if(evals[i] == 'sleep'){
               sleepResponse = {
                 'time': $("input[name='sleep-time']").val(),
-                'hours': $("input[name='sleep-hours']").val(),
-                'quality': $("input[name='sleep-quality']:checked").val(),
+                /*'hours': $("input[name='sleep-hours']").val(),*/
+                /*'quality': $("input[name='sleep-quality']:checked").val(),*/
+                'well': $("input[name='sleep-well']:checked").val(),
                 'sleepy': $("input[name='sleep-sleepy']:checked").val()
               };
               answers['sleep'] = sleepResponse;
             }
             else if(evals[i] == 'school'){
               schoolResponse = {
-                'on-time': $("input[name='school-ontime']:checked").val(),
+                /*'on-time': $("input[name='school-ontime']:checked").val(),
                 'put-off': $("input[name='school-putoff']:checked").val(),
                 'enjoy': $("input[name='school-enjoy']:checked").val(),
                 'hard': $("input[name='school-hard']:checked").val(),
-                'trouble': $("input[name='school-trouble']:checked").val()
+                'trouble': $("input[name='school-trouble']:checked").val()*/
+                'enjoy': $("input[name='school-enjoy']:checked").val(),
+                'difficult': $("input[name='school-difficult']:checked").val(),
+                'on-time': $("input[name='school-ontime']:checked").val(),
+                'teacher': $("input[name='school-teacher']:checked").val()
               };
               answers['school'] = schoolResponse;
             }
             else if(evals[i] == 'friends'){
               friendsResponse = {
-                'fights': $("input[name='friends-fights']:checked").val(),
+                /*'fights': $("input[name='friends-fights']:checked").val(),
                 'number': $("input[name='friends-number']").val(),
-                'happy': $("input[name='friends-happy']:checked").val()
+                'happy': $("input[name='friends-happy']:checked").val()*/
+                'talk': $("input[name='friends-talk']:checked").val(),
+                'many': $("input[name='friends-many']:checked").val(),
+                'happy': $("input[name='friends-happy']:checked").val(),
+                'fight': $("input[name='friends-fight']:checked").val()
               };
               answers['friends'] = friendsResponse;
             }
-            else if(evals[i] == 'family'){/* questions not written yet */}
+            else if(evals[i] == 'family'){
+              familyResponse = {
+                'happy': $("input[name='family-happy']:checked").val(),
+                'talk': $("input[name='family-talk']:checked").val(),
+                'supportive': $("input[name='family-supportive']:checked").val(),
+                'loving': $("input[name='family-loving']:checked").val()
+              };
+              answers['family'] = familyResponse;
+            }
             else if(evals[i] == 'mood'){
-              moodResponse = {
+              /*moodResponse = {
                 'mood': $("input[name='mood']:checked").val()
               };
-              answers['mood'] = moodResponse;
+              answers['mood'] = moodResponse;*/
             }
-            else if(evals[i] == 'activities'){/* questions not written yet */}
-            else if(evals[i] == 'attention'){/* questions not written yet */}
+            else if(evals[i] == 'activities'){
+              activitiesResponse = {
+                'play': $("input[name='activities-play']:checked").val(),
+                'read': $("input[name='activities-read']:checked").val(),
+                'tv': $("input[name='activities-tv']:checked").val(),
+                'videogames': $("input[name='activities-videogames']:checked").val()
+              };
+              answers['activities'] = activitiesResponse;
+            }
+            else if(evals[i] == 'attention'){
+              attentionResponse = {
+                'hard': $("input[name='attention-hard']:checked").val(),
+                'multitask': $("input[name='attention-multitask']:checked").val(),
+                'listener': $("input[name='attention-listener']:checked").val()
+              };
+              answers['attention'] = attentionResponse;
+            }
           } // finish putting all the client's responses in object 'answers'
 
           console.log(answers); // check to see if 'answers' was properly constructed
@@ -91,7 +123,7 @@ $(document).ready(()=>{
 
           window.location.href = "client-home.html"; // bring the client back to the home page
         });
-        
+
     });//end of finish-survey click...
 
 });
