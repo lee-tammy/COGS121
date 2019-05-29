@@ -9,28 +9,29 @@ Team Members: Tammy Lee, Allison Patacsil, Amanda Hittelman, Janselle Justo
 # UI Changes
 Since Milestone 4, we have done the following UI changes:
 1. Got rid of a webpage named "client-status.html" and moved the information from that webpage to another webpaged named "client-profile.html".
-2. Updated the UI icons and created animations and surveys.
-3. Fix the UI for the webpage named "doc-search.html" for the dropdown menu and table.
-4. Fix the evaluation lists to make it more aesthetics.
-5. Create the final survey questions for the data visualizations.
-6. Implement data visualization of client status.
+2. Fix the UI for the webpage named "doc-search.html" for the dropdown menu and table.
+3. Fix the evaluation lists to make it more aesthetics.
+4. Create the final survey questions for the data visualizations.
+5. Implement data visualization of client status (explained more in "Data Visualizations").
 
 # Screenshots of updated Webpages
 
 ## Therapist POV
 
-### Client Home
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/SOME.png)
-
-## Client POV
-
-### Client Home
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/SOME.png)
-
 ## Data Visualizations
 "Contain written explanation of how you implemented your data display or visualizations, such as which libraries/frameworks you used, how you hooked up to data APIs or databases, etc."<br>
 For the data visualizations, we utlized the Google Charts API. We...
 
+### Evaluations Results
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/chart.png)
+
+### Zoomed-In 
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/chart-zoom-in.png)
+
+## Client POV
+
+### Client Home [HOLD]
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/SOME.png)
 
 # Possible Implementations to Visualizations
 "Contains a paragraph describing some more ambitious data display or visualization ideas beyond what you've implemented that would make your app more polished. Note that you do NOT need to implement those ideas, so feel free to be more creative here."
