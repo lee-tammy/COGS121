@@ -18,7 +18,9 @@ Since Milestone 4, we have done the following UI changes:
 
 ## Therapist POV
 
-## Data Visualizations
+## Client POV
+
+## Data Visualizations - Therapist POV Only
 "Contain written explanation of how you implemented your data display or visualizations, such as which libraries/frameworks you used, how you hooked up to data APIs or databases, etc."<br>
 For the data visualizations, we utlized the Google Charts API. We...
 
@@ -27,8 +29,6 @@ For the data visualizations, we utlized the Google Charts API. We...
 
 ### "Zoomed-In" Evaluation Results
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/chart-zoom-in.png)
-
-## Client POV
 
 # Possible Implementations to Visualizations
 "Contains a paragraph describing some more ambitious data display or visualization ideas beyond what you've implemented that would make your app more polished. Note that you do NOT need to implement those ideas, so feel free to be more creative here."
