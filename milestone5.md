@@ -1,79 +1,29 @@
 Team Name: TAAJ <br>
 Team Members: Tammy Lee, Allison Patacsil, Amanda Hittelman, Janselle Justo
 
+# Scenario of Target User Population
+<b>Primary Target User Population:</b> Therapists treating 8-year-old to 11-year-old children.<br>
+<br><b>Secondary Target User Population:</b> 8-year-old to 11-year-old children.<br>
+<br>Stacy is a therapist for a 10-year-old girl named Alex who moved from Los Angeles, CA to San Jose, CA. According to Alex's parents, Alex had changing moods and refuses to talk to them about school even though they received complaints about her behavior. After a few weeks of meeting Alex, Stacy is having trouble getting her to talk about her new school and would sit there looking at the clock as the time passes by. By searching ways to help children express themselves, Stacy found the Aminals web-application catered toward therapists where they can monitor their clients' relationships, moods, and activities. Seeing this as a potential solution to get Alex to talk, she made an account for herself and Alex. After a few weeks of using the web-application, Stacy was able to find out that Alex was being bullied in school and blackmailed. Therefore, Stacy made the necessary actions to help her client by seeking other experts to help her problem at school.<br>
+
 # UI Changes
-Since Milestone 3, we have worked to integrate the survey questions and selection/evaluation pages as well. With these added inputs, we needed consistent UI that denoted which options were chosen. As such, we have updated these UI pages as well as worked to keep consistent type buttons and elements throughout.<br><br>Next, we will work to realign the elements that have been moved when adding other HTML elements, and finally integrate our animations. 
+Since Milestone 4...<br>
+<br>...
 
 # Screenshots of updated Webpages
-### Login
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/login.png)
-
-### Signup
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/signup.png)
 
 ## Therapist POV
 
-### Therapist Home 
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/therapist-home.png)
-
-### Therapist Profile 
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/therapist-profile.png)
-
-### Therapist Updates
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/updates.png)
-
-### Client List
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/client-list.png)
-
-### Add Client 
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/add-client.png)
-
-### Client Profile
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/client-profile.png)
-
-### Client Status
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/client-status.png)
-
-### Evaluation Page - Sleep
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/eval-page-sleep.png)
-
-### Evaluation Selection
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/eval-selection.png)
+### Client Home
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/client-home.png)
 
 ## Client POV
 
 ### Client Home
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/client-home.png)
 
-### Survey 
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/survey.png)
-
-### User Profile 
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/user-profile.png)
-
-### User Profile 
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/user-profile.png)
-
-### Evaluation Page - Sleep
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/eval-page-sleep.png)
-
-### Doctor Search
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/doc-search.png)
-
-### Settings
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-4/settings.png)
+## Data Visualizations
 
 
+# Possible Implementations to Visualizations
 
-# User Actions
-<b>Feed Coco!</b>: To feed coco, the client must complete the evaluations that the therapist assigned to them.  All of their responses are added to our firebase database, which we use on the therapist side of the app to track how the kids are doing.<br>
-
-<b>Change client evaluations</b>: Instead of having one long evaluation with questions of various topics, we have 7 different evaluations that the therapist can choose from to assign to the client.  This allows the therapist to choose evaluations that cater to each client.<br>
-
-<b>Add client</b>: The therapist can create an account for a new client where they will be prompted to enter the client's information and assign them evaluations.  The new client will be added as a 'user' in our firebase database, added to the therapist's client list and can now login into their account with their username.<br>
-
-<b>Recommend doctor</b>: If the therapist feels that a client needs additional help that they cannot provide, they can use this feature to find someone to recommend.  The therapist chooses which specialty they need for their client and we utilize the BetterDoctors API to provide a list of people in that specialty for them to recommend to their client.<br>
-
-<b>Create a therapist account</b>: On the home page, the therapist will either sign
-in or create a new therapist account.  When they create an account, they will be
-added as a 'user' to our firebase database, and can then sign in with their username.
