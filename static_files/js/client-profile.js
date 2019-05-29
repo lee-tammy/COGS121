@@ -66,6 +66,9 @@ $(document).ready(()=>{
       }
     });
 
+        // <input id="sleep" type="checkbox" name="eval" value="sleep"><label class="eval-label container-fluid" for="sleep"><div class="row align-items-center"><img class="col-sm-3 align-self-center" id="sleep-icon" src="images/icons/sleep.png"><p class="eval-title col-sm-9 align-self-center">Sleep</p></div></label><br>  
+
+
     // create a link to evaluations selection page
     let evalLink = '<a href="eval-selection.html#' + username + '">Change Evaluations</a>';
     $('#change-eval-link').html(evalLink);

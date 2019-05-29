@@ -81,6 +81,29 @@ Purple;
 	margin-right: auto;
 }
 
+.agree-icon {
+
+}
+
+.survey-label {
+	flex-wrap: nowrap !important;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-left: 30px !important;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 150px !important;
+	width: 650px !important;
+
+	border-style: solid;
+	border-width: 10px;
+	border-radius:30px;
+	border-color:  #e9eafc;
+
+	background-color:  #e9eafc;
+}
+
 input[type=button]{
 	margin-bottom: 5px;
 	margin-top: 5px;
@@ -95,11 +118,9 @@ input[type=button]{
 }
 
 input[type=radio]{
-	margin-left:10%;
 	margin-bottom: 5px;
 	margin-top: 5px;
 	visibility: hidden;
-
 
 	padding-left: 20px;
 	padding-right: 20px;
@@ -261,7 +282,7 @@ input[type=text], input[type=email] {
 .signout-button{
 	width: 300px;
 	color: #474747;
-	font-size: 230%;
+	font-size: 300%;
 	text-align: center;
 	font-family: "Futura", serif;
 	text-decoration: none;
@@ -673,4 +694,10 @@ input[type=text] {
 	border-width: 20px;
 	border-radius: 30px;
 	border-color: #FCFDFD;
+}
+
+
+/*eval-selection*/
+#change-evals{
+	font-size: 50px !important;
 }

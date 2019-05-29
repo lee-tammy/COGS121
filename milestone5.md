@@ -9,16 +9,72 @@ Team Members: Tammy Lee, Allison Patacsil, Amanda Hittelman, Janselle Justo
 # UI Changes
 Since Milestone 4, we have done the following UI changes:
 1. Got rid of a webpage named "client-status.html" and moved the information from that webpage to another webpaged named "client-profile.html".
-2. Fix the UI for the webpage named "doc-search.html" for the dropdown menu and table.
-3. Fix the evaluation lists to make it more aesthetics.
-4. Create the final survey questions for the data visualizations.
-5. Implement data visualization of client status (explained more in "Data Visualizations").
+2. Realigned any off center elements throughout the entirety of the UI
+3. Added custom icons for different lists in the surveys and evaluations. 
+4. Fix the UI for the webpage named "doc-search.html" for the dropdown menu and table.
+5. Fix the evaluation lists to make it more aesthetics.
+6. Create the final survey questions for the data visualizations.
+7. Implement data visualization of client status (explained more in "Data Visualizations").
 
 # Screenshots of updated Webpages
+### Login
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/login.png)
+
+### Signup
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/signup.png)
 
 ## Therapist POV
 
+### Therapist Home 
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/therapist-home.png)
+
+### Therapist Profile 
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/therapist-profile.png)
+
+### Therapist Updates
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/updates.png)
+
+### Client List
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/client-list.png)
+
+### Add Client 
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/add-client.png)
+
+### Client Profile
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/client-profile.png)
+
+### Client Status
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/client-status.png)
+
+### Evaluation Page - Sleep
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/eval-page-sleep.png)
+
+### Evaluation Selection
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/eval-selection.png)
+
 ## Client POV
+
+### Client Home
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/client-home.png)
+
+### Survey 
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/survey.png)
+
+### User Profile 
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/user-profile.png)
+
+### User Profile 
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/user-profile.png)
+
+### Evaluation Page - Sleep
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/eval-page-sleep.png)
+
+### Doctor Search
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/doc-search.png)
+
+### Settings
+![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/settings.png)
+
 
 ## Data Visualizations - Therapist POV Only
 "Contain written explanation of how you implemented your data display or visualizations, such as which libraries/frameworks you used, how you hooked up to data APIs or databases, etc."<br>
