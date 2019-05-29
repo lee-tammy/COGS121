@@ -17,10 +17,12 @@ $(document).ready(()=>{
     const database = firebase.database();
     const user = localStorage.getItem("user");
 
+
     // gets the username of the client profile you're viewing
     let path = window.location.href;
     let segments = path.split('#');
     let username = segments[segments.length - 1];
+
 
     // display the client's information
     const key = 'users/' + username;
@@ -33,10 +35,19 @@ $(document).ready(()=>{
                            'Age: ' + data.age);
     });
 
-    // create a link to the client's evaluations
-    let statusLink = '<a id="check-status" href="client-status.html#' + username + '">Status</a>';
-    $('.orange-button').html(statusLink);
 
+    // Loops through all assigned evaluations and creates button for each
+    database.ref('users/' + username + '/evals/assigned').on('value', (snapshot)=>{
+      const assignedEvals = snapshot.val();
 
+      for(let i = 0; i < assignedEvals.length; i++){
+        let profileLink = '<a href="eval-page.html#' + username + '#' + assignedEvals[i] + '">';
+        $('#list-of-evals').append('<li>' + profileLink + assignedEvals[i]);;
+      }
+    });
+
+    // create a link to evaluations selection page
+    let evalLink = '<a href="eval-selection.html#' + username + '">Change Evaluations</a>';
+    $('#change-eval-link').html(evalLink);
 
 });

@@ -24,7 +24,7 @@ $(document).ready(()=>{
 
 
     // create a link to the client's evaluations
-    let statusLink = '<a href="client-status.html#' + username + '"><img id="menu-back" src="images/menu/back.png"></a>';
+    let statusLink = '<a href="client-profile.html#' + username + '"><img id="menu-back" src="images/menu/back.png"></a>';
     $('#back-to-status').html(statusLink);
 
 

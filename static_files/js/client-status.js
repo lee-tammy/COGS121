@@ -1,4 +1,4 @@
-$(document).ready(()=>{
+/*$(document).ready(()=>{
     // Initialize Firebase
 
     var firebaseConfig = {
@@ -25,15 +25,15 @@ $(document).ready(()=>{
     // create a link to the client's evaluations
     let profileLink = '<a href="client-profile.html#' + username + '"><img id="menu-back" src="images/menu/back.png"></a>';
     $('#back-to-profile').html(profileLink);
-    
-    // Loops through all assigned evaluations and creates button for each 
+
+    // Loops through all assigned evaluations and creates button for each
     database.ref('users/' + username + '/evals/assigned').on('value', (snapshot)=>{
       const assignedEvals = snapshot.val();
 
       for(let i = 0; i < assignedEvals.length; i++){
         let profileLink = '<a href="eval-page.html#' + username + '#' + assignedEvals[i] + '">';
         $('#list-of-evals').append('<li>' + profileLink + assignedEvals[i]);;
-        
+
       }
     });
 
@@ -43,4 +43,4 @@ $(document).ready(()=>{
 
 
 
-});
+}); */

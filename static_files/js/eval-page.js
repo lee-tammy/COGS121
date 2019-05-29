@@ -23,7 +23,7 @@ $(document).ready(()=>{
     let username = segments[segments.length - 2];
     let eval = segments[segments.length - 1];
 
-    $("#client-status").attr("href", 'client-status.html#' + username);
+    $("#client-status").attr("href", 'client-profile.html#' + username);
 
     // TODO: show the responses of the client based on eval.
 
