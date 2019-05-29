@@ -77,8 +77,7 @@ Since Milestone 4, we have done the following UI changes:
 
 
 ## Data Visualizations - Therapist POV Only
-"Contain written explanation of how you implemented your data display or visualizations, such as which libraries/frameworks you used, how you hooked up to data APIs or databases, etc."<br>
-For the data visualizations, we utlized the Google Charts API. We...
+For the data visualizations, we first made dummy data for on client on the Firebase that corresponds numbered "sleep-related" survey questions that would be answered by the client. The data will be displayed along a two dimensional line graph with the y-axis as the answers (rating of 1-4 that respectively corresponds to Strongly Disagree to Strongly Agree) and the x-axis as the dates of when those questions were answered (Refer to <b>"Zoomed-In" Evaluation Results</b>). We then integrated a Google Charts API to display the graph by using that client's data grabbed from the Firebase specifically under "evals" using a coded function named "drawChart" in a JavaScript file. These charts can only be displayed in the Therapist POV because it allows the therapist to see the long-term results of their clients' mental health such that any large discrepancies would initiate a one-on-one meeting or other immediate actions.
 
 ### Evaluations Results
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/chart.png)
@@ -87,4 +86,4 @@ For the data visualizations, we utlized the Google Charts API. We...
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/chart-zoom-in.png)
 
 # Possible Implementations to Visualizations
-"Contains a paragraph describing some more ambitious data display or visualization ideas beyond what you've implemented that would make your app more polished. Note that you do NOT need to implement those ideas, so feel free to be more creative here."
+Compared to our current visualizations, we wish to have an animated visualization that can pinpoint any large discrepancies of the client's answers. From this, the therapist can realize common patterns and initiate actions that are needed to mitigate those discrepancies. Another feature the visualizations would have is the ability to zoom into a specific area on the graph such that it can display a more detailed representation of that area. When zoomed into that area, the maximums or minimums would automatically display the value of the answer (rating of 1-4) and the date of when that value was entered. By doing this, the therapist can ask the client about that specific date when meeting one-on-one. Though these features are beyond the scope of the class and out of our skill level, these features would effectively help therapists review large long-term data from their clients.
