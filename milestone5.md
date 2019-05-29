@@ -9,7 +9,7 @@ Team Members: Tammy Lee, Allison Patacsil, Amanda Hittelman, Janselle Justo
 # UI Changes
 Since Milestone 4, we have done the following UI changes:
 1. Got rid of a webpage named "client-status.html" and moved the information from that webpage to another webpaged named "client-profile.html".
-2. Updated the UI icons and created and surveys.
+2. Updated the UI icons and created animations and surveys.
 3. Fix the UI for the webpage named "doc-search.html" for the dropdown menu and table.
 4. Fix the evaluation lists to make it more aesthetics.
 5. Create the final survey questions for the data visualizations.
