@@ -25,13 +25,10 @@ For the data visualizations, we utlized the Google Charts API. We...
 ### Evaluations Results
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/chart.png)
 
-### Zoomed-In 
+### "Zoomed-In" Evaluation Results
 ![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/chart-zoom-in.png)
 
 ## Client POV
-
-### Client Home [HOLD]
-![](https://github.com/lee-tammy/COGS121/blob/master/images/milestone-5/SOME.png)
 
 # Possible Implementations to Visualizations
 "Contains a paragraph describing some more ambitious data display or visualization ideas beyond what you've implemented that would make your app more polished. Note that you do NOT need to implement those ideas, so feel free to be more creative here."
