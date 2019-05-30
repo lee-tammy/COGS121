@@ -22,7 +22,7 @@ Bright green:
 	#21C293
 Darker Green:
 	#399C7D
-Lighter Green: 
+Lighter Green:
 	#8BCF62
 Yellow:
 	#F8CB43
@@ -120,7 +120,7 @@ input[type=button]{
 input[type=radio]{
 	margin-bottom: 5px;
 	margin-top: 5px;
-	visibility: hidden;
+	/*visibility: hidden;*/ /* CHANGE MADE BY ALLY */
 
 	padding-left: 20px;
 	padding-right: 20px;
@@ -226,7 +226,7 @@ input[type=text], input[type=email] {
 	text-align: center !important;
 }
 
-.greeting2 { 
+.greeting2 {
 	font-family: "HelveticaNeue-Thin", serif;
 	font-size: 400%;
 	text-align: center;
@@ -360,7 +360,7 @@ input[type=text], input[type=email] {
 	font-family: "Helvetica", serif;
 	margin-left: 25%;
 	display: inline-block;
-	
+
 }
 
 #user-name-text{
@@ -471,7 +471,7 @@ input[type=text] {
 	margin-bottom: 75 !important;
 }
 
-/* Therapist Home */ 
+/* Therapist Home */
 #list-icon{
 	height: 100px;
 	width: auto;
@@ -532,7 +532,7 @@ input[type=text] {
 }
 
 /* sign-up */
-.signup { 
+.signup {
 	font-family: "HelveticaNeue-Thin", serif;
 	font-size: 400%;
 	color: #474747;
@@ -595,7 +595,7 @@ input[type=text] {
 	font-family: "HelveticaNeue-Thin", serif;
 	display: block !important;
 	margin-left: auto;
-	margin-right:auto;	
+	margin-right:auto;
 
 	width: 100%;
 	padding-left: 50px;
@@ -610,7 +610,7 @@ input[type=text] {
 }
 
 /*adding client page*/
-.adding-client { 
+.adding-client {
 	font-family: "HelveticaNeue-Thin", serif;
 	font-size: 400%;
 	color: #474747;
@@ -673,12 +673,12 @@ input[type=text] {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100px;
-	margin-bottom: 75;	
+	margin-bottom: 75;
 }
 
 
 .survey-title {
-	display: block !important;
+	/*display: block !important;*/ /* CHANGE MADE BY ALLY */
 	margin-left: auto;
 	margin-right: auto;
 
