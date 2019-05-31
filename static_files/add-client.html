@@ -15,7 +15,7 @@
     <div id="menu" class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
-          <a href="client-list.html">
+          <a id="back-button" href="client-list.html">
             <img id="menu-back" src="images/menu/back.png">
           </a>
         </div>
@@ -47,7 +47,7 @@
           <input id="family" type="checkbox" name="eval" value="family"><label class="eval-label container-fluid" for="family"><div class="row align-items-center"><img class="col-sm-3 align-self-center" id="family-icon" src="images/icons/family.png"><p class="eval-title col-sm-9 align-self-center">Family</p></div></label><br>      
           <input id="activities" type="checkbox" name="eval" value="activities"><label class="eval-label container-fluid" for="activities"><div class="row align-items-center"><img class="col-sm-3 align-self-center" id="activity-icon" src="images/icons/activities.png"><p class="eval-title col-sm-9 align-self-center">Activities</p></div></label><br> 
           <input id="attention" type="checkbox" name="eval" value="attention"><label class="eval-label container-fluid" for="attention"><div class="row align-items-center"><img class="col-sm-3 align-self-center" id="attention-icon" src="images/icons/attention.png"><p class="eval-title col-sm-9 align-self-center">Attention</p></div></label><br> 
-          <button id="addClient">Add Client</button>
+          <button id="addClient" href="client-list.html">Add Client</button>
         </div>
       </div>
 
@@ -57,6 +57,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/client-list.js"></script>
     <script src="js/add-client.js"></script>
+
+    <script>
+      $('#addClient').click(()=>{
+        console.log("HI");
+        $('#back-button').click();
+        window.location.href = "client-list.html";
+      });
+    </script>
   </body>
 
 </html>
