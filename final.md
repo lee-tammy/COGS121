@@ -62,9 +62,9 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 <b>eval-selection.js</b><br>
 <b>style.css</b><br>
 ### Doctor Search
-<b>doc-search.html</b><br>
-<b>betterdoc_api.js</b><br>
-<b>style.css</b><br>
+<b>doc-search.html</b> The webpage displays the information grabbed from the BetterDoctors API. It takes the value of the inputed specialty and translate that to a HTML request sent to the BetterDoctors website to receive the data.<br><br>
+<b>betterdoc_api.js</b> The JavaScript file gets the BetterDoctors API key from the Firebase and sets up a HTML url request to send to the BetterDoctors server. After receiving the data, it displays that information using the Handlebars function.<br><br>
+<b>style.css</b> Styles the doc-search.html and table displaying the data of doctors from the BetterDoctors server.<br>
 ## Client POV
 ### Client Home
 <b>client-home.html</b><br>
