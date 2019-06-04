@@ -30,49 +30,49 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 "The final.md should contian a list of all source code files in your GitHub project repo that your team members wrote, along with a brief description of what functionality is implemented in each file. This should include all HTML, CSS, JavaScript, and other relevant code files that you wrote. Don't need to include descriptions for library or module files."
 ## Therapist POV
 ### Login
-login.html<br>
-login.js<br>
-therapist-home.js<br>
-style.css<br>
+<b>login.html</b><br>
+<b>login.js</b><br>
+<b>therapist-home.js</b><br>
+<b>style.css</b><br>
 ### Sign-up
-sign-up.html<br>
-login.js<br>
-sign-up.js<br>
-style.css<br>
+<b>sign-up.html</b><br>
+<b>login.js</b><br>
+<b>sign-up.js</b><br>
+<b>style.css</b><br>
 ### Client List
-client-list.html<br>
-client-list.js<br>
-add-client.js<br>
-style.css<br>
+<b>client-list.html</b><br>
+<b>client-list.js</b><br>
+<b>add-client.js</b><br>
+<b>style.css</b><br>
 ### Add Client
-add-client.html<br>
-client-list.js<br>
-add-client.js<br>
-style.css<br>
+<b>add-client.html</b><br>
+<b>client-list.js</b><br>
+<b>add-client.js</b><br>
+<b>style.css</b><br>
 ### Client Profile
-client-profile.html<br>
-client-profile.js<br>
-style.css<br>
+<b>client-profile.html</b><br>
+<b>client-profile.js</b><br>
+<b>style.css</b><br>
 ### Evaluation Page
-eval-page.html<br>
-eval-page.js<br>
-style.css<br>
+<b>eval-page.html</b><br>
+<b>eval-page.js</b><br>
+<b>style.css</b><br>
 ### Evaluation Selection
-eval-selection.html<br>
-eval-selection.js<br>
-style.css<br>
+<b>eval-selection.html</b><br>
+<b>eval-selection.js</b><br>
+<b>style.css</b><br>
 ### Doctor Search
-doc-search.html<br>
-betterdoc_api.js<br>
-style.css<br>
+<b>doc-search.html</b><br>
+<b>betterdoc_api.js</b><br>
+<b>style.css</b><br>
 ## Client POV
 ### Client Home
-client-home.html<br>
-client-home.js<br>
-style.css<br>
+<b>client-home.html</b><br>
+<b>client-home.js</b><br>
+<b>style.css</b><br>
 ### Survey
-survey.html<br>
-survey.js<br>
-style.css<br>
+<b>survey.html</b><br>
+<b>survey.js</b><br>
+<b>style.css</b><br>
 # 2-Minute Demo Video
 Insert Link HERE
