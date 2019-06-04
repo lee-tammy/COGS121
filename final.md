@@ -62,8 +62,8 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 <b>eval-selection.js</b><br><br>
 <b>style.css</b><br><br>
 ### Doctor Search
-<b>doc-search.html</b> The webpage displays the information grabbed from the BetterDoctors API. It takes the value of the inputed specialty and translate that to a HTML url request sent to the BetterDoctors serve to receive the data.<br><br>
-<b>betterdoc_api.js</b> The JavaScript file gets the BetterDoctors API key from the Firebase and sets up a HTML url request to send to the BetterDoctors server. After receiving the data, it displays that information using the Handlebars function.<br><br>
+<b>doc-search.html</b> The webpage displays the information grabbed from the BetterDoctors API. Since this API displays a list of doctors within the user's location, it asks the user to access their location via Geolocation API. It takes the value of the inputed specialty (and location) and translate that to an HTML url request sent to the BetterDoctors server to receive the data.<br><br>
+<b>betterdoc_api.js</b> The JavaScript file gets the BetterDoctors API key from the Firebase and gets the user's location using the Geolocation API. With the API key and location, it sets up a HTML url request to send to the BetterDoctors server. After receiving the data, it displays that information using the Handlebars function.<br><br>
 <b>style.css</b> Styles the doc-search.html and table displaying the data of doctors from the BetterDoctors server.<br>
 ## Client POV
 ### Client Home
