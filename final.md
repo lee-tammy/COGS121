@@ -33,47 +33,47 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 <b>login.html</b> The webpage displays the log in form where the therapist or client can log into the web-application to their prospective home pages. There is also the functionality to make and start a therapist account (discussed more in the therapist.html section).<br><br>
 <b>login.js</b><br><br>
 <b>therapist-home.js</b><br><br>
-<b>style.css</b><br><br>
+<b>style.css</b> Styles the icons, text, and layout for login.html.<br>
 ### Sign-up
 <b>sign-up.html</b><br><br>
 <b>login.js</b><br><br>
 <b>sign-up.js</b><br><br>
-<b>style.css</b><br><br>
+<b>style.css</b> Styles the icons, text, and layout for sign-up.html.<br>
 ### Client List
 <b>client-list.html</b><br><br>
 <b>client-list.js</b><br><br>
 <b>add-client.js</b><br><br>
-<b>style.css</b><br><br>
+<b>style.css</b> Styles the icons, text, and layout for client-list.html.<br>
 ### Add Client
 <b>add-client.html</b><br><br>
 <b>client-list.js</b><br><br>
 <b>add-client.js</b><br><br>
-<b>style.css</b><br>
+<b>style.css</b> Styles the icons, text, and layout for add-client.html.<br>
 ### Client Profile
 <b>client-profile.html</b><br><br>
 <b>client-profile.js</b><br><br>
-<b>style.css</b><br><br>
+<b>style.css</b> Styles the icons, text, and layout for client-profile.html.<br>
 ### Evaluation Page
 <b>eval-page.html</b><br><br>
 <b>eval-page.js</b><br><br>
-<b>style.css</b><br><br>
+<b>style.css</b> Styles the icons, text, and layout for eval-page.html.<br>
 ### Evaluation Selection
 <b>eval-selection.html</b><br><br>
 <b>eval-selection.js</b><br><br>
-<b>style.css</b><br><br>
+<b>style.css</b> Styles the icons, text, and layout for eval-selection.html.<br>
 ### Doctor Search
 <b>doc-search.html</b> The webpage displays the information grabbed from the BetterDoctor API. Since this API displays a list of doctors within the user's location, it asks the user to access their location via Geolocation API. It takes the value of the inputed specialty (and location) and translate that to an HTML url request sent to the BetterDoctor server to receive the data.<br><br>
 <b>betterdoc_api.js</b> The JavaScript file gets the BetterDoctor API key from the Firebase and gets the user's location using the Geolocation API. With the API key and location, it sets up a HTML url request to send to the Better
 server. After receiving the data, it displays that information using the Handlebars function.<br><br>
-<b>style.css</b> Styles the doc-search.html and table displaying the data of doctors from the BetterDoctor server.<br>
+<b>style.css</b> Styles the icons, text, and layout for doc-search.html.<br>
 ## Client POV
 ### Client Home
 <b>client-home.html</b><br><br>
 <b>client-home.js</b><br><br>
-<b>style.css</b><br><br>
+<b>style.css</b> Styles the icons, text, and layout for client-home.html.<br>
 ### Survey
 <b>survey.html</b><br><br>
 <b>survey.js</b><br><br>
-<b>style.css</b><br><br>
+<b>style.css</b> Styles the icons and layout for survey.html.<br>
 # 2-Minute Demo Video
 Insert Link HERE
