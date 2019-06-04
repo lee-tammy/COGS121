@@ -30,7 +30,7 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 "The final.md should contian a list of all source code files in your GitHub project repo that your team members wrote, along with a brief description of what functionality is implemented in each file. This should include all HTML, CSS, JavaScript, and other relevant code files that you wrote. Don't need to include descriptions for library or module files."
 ## Therapist POV
 ### Login
-<b>login.html</b> The webpage displays the log in form where the therapist or client can log into the web-application to their prospective home pages. There is also the functionality to make and start a therapist account.<br><br>
+<b>login.html</b> The webpage displays the log in form where the therapist or client can log into the web-application to their prospective home pages. There is also the functionality to make and start a therapist account (discussed more in the therapist.html section).<br><br>
 <b>login.js</b><br><br>
 <b>therapist-home.js</b><br><br>
 <b>style.css</b><br><br>
