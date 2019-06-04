@@ -26,6 +26,29 @@ Team Members: Tammy Lee, Allison Patacsil, Amanda Hittelman, Janselle Justo
 # Google Slides Presentation
 https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQE0E/edit?usp=sharing
 
+# File Descriptions
+"The final.md should contian a list of all source code files in your GitHub project repo that your team members wrote, along with a brief description of what functionality is implemented in each file. This should include all HTML, CSS, JavaScript, and other relevant code files that you wrote. Don't need to include descriptions for library or module files."
+## Therapist POV
+### Login
+
+### Sign-up
+
+### Client List
+
+### Add Client
+
+### Client Profile
+
+### Evaluation Page
+
+### Evaluation Selection
+
+### Doctor Search
+
+## Client POV
+### Client Home
+
+### Survey
+
 # 2-Minute Demo Video
-
-
+Insert Link HERE
