@@ -1,24 +1,24 @@
 <!DOCTYPE HTML>
 
 <html>
-
-  <head> 
+<!-- login.html: This webpage displays the login form for returning users where
+     the therapist or client can log into the web-application to their
+     prospective home pages. Additionally, a new therapist can also create an
+     account (discussed more in the sign-up.html section).
+-->
+  <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />   
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
-    
-    
   </head>
 
   <body id="login-background">
-    
     <h1 id="login-welcome" class="container-fluid"><br>Welcome to</h1>
-    <h1 id="login-coco">coco!</h1>
+    <h1 id="login-coco">coco!</h1><br>
 
-    <br>
     <img id="login-image" src="login.png">
 
     <div id="input">
@@ -26,10 +26,10 @@
         <input class="login-obj" type="text" id="user-name" name="user-name"><br>
         <button class="login-button login-obj" id="log-in" type="button">Log In</button><br>
         <button class="signup-button login-obj" id="sign-up" type="button">Create a therapist account</button>
-    </div> 
+    </div>
 
-    <form id="login-input">
-    </form>
+    <form id="login-input"></form>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/therapist-home.js"></script>

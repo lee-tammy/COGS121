@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
 
 <html>
-
+<!-- sign-up.html: This webpage displays a sign-up form where users enter their
+     username, first name, last name, gender, and email. After making a new
+     account, they will be redirected back to the login page.
+-->
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -9,53 +12,35 @@
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
-    
   </head>
 
   <div id="menu" class="container-fluid">
     <div id="menu-row" class="row">
         <div class="col-sm-4">
-          <a href="login.html">
-            <img id="menu-back" src="images/menu/back.png">
-          </a>
+          <a href="login.html"><img id="menu-back" src="images/menu/back.png"></a>
         </div>
-      <div class="col-sm-4">
-        <p>coco</p>
-      </div>
-      <div class="col-sm-4">
-      </div>
+      <div class="col-sm-4"><p>coco</p></div>
+      <div class="col-sm-4"></div>
     </div>
   </div>
-  
+
     <br>
     <div class="signup">
-        Username:            <input type="text" id="username" ><br>
-        First Name: 
-          <input type="text" id="first-name" ><br>
-        Last Name: 
-        <input type="text" id="last-name" ><br><br>
+        Username: <input type="text" id="username" ><br>
+        First Name: <input type="text" id="first-name" ><br>
+        Last Name: <input type="text" id="last-name" ><br><br>
         Gender: <br>
-          <input id="female" type="radio" class="gender" name="gender" value="female">
-            <label for="female">
-              <img  class="gender-icon" src="../images/icons/female.png">
-            </label>
+          <input id="female" type="radio" class="gender" name="gender" value="female"><label for="female"><img  class="gender-icon" src="../images/icons/female.png"></label>
           <input id="male" type="radio" class="gender" name="gender" value="male"><label for="male"><img class="gender-icon" src="../images/icons/male.png"></label>
           <input id="other" type="radio" class="gender" name="gender" value="prefer-not-to-stay"><label class="gender-icon" for="other">Other</label><br><br>
-     
         Email: <input type="email" id="email"><br>
-        
+
         <input class="border-button"type="submit" id="create-acc" value="Submit">
       </div>
 
-    
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
-
     <script src="js/sign-up.js"></script>
-       
+
   </body>
-   
-
-
 </html>

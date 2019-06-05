@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
 
 <html>
-
+<!-- survey.html: This webpage displays the assigned evaluations the client must
+     complete to feed the animated cat. After each finished set of evaluation,
+     the client feeds the animal until they have finished their survey.
+-->
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -84,8 +87,6 @@
       <input type="radio" name="school-teacher" id='school-q4.2' value=2><label class="survey-label container-fluid" for='school-q4.2'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/disagree.png"><p class="eval-title col-sm-9 align-self-center">Disagree</p></div></label><br>
       <input type="radio" name="school-teacher" id='school-q4.1' value=1><label class="survey-label container-fluid" for='school-q4.1'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/strong-disagree.png"><p class="eval-title col-sm-9 align-self-center">Strongly Disagree</p></div></label><br>
       <br><br>
-
-
     </div><!--end of school questions-->
 
     <div class="survey-title" id="friends-questions" style="display: none">
@@ -120,8 +121,6 @@
       <input type="radio" name="friends-fight" id='friends-q4.2' value=2><label class="survey-label container-fluid" for='friends-q4.2'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/disagree.png"><p class="eval-title col-sm-9 align-self-center">Disagree</p></div></label><br>
       <input type="radio" name="friends-fight" id='friends-q4.1' value=1><label class="survey-label container-fluid" for='friends-q4.1'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/strong-disagree.png"><p class="eval-title col-sm-9 align-self-center">Strongly Disagree</p></div></label><br>
       <br><br>
-
-
     </div><!--end of friends questions-->
 
     <div class="survey-title" id="family-questions" style="display: none">
@@ -153,7 +152,6 @@
       <input type="radio" name="family-loving" id='family-q4.3' value=3><label class="survey-label container-fluid" for='family-q4.3'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/agree.png"><p class="eval-title col-sm-9 align-self-center">Agree</p></div></label><br>
       <input type="radio" name="family-loving" id='family-q4.2' value=2><label class="survey-label container-fluid" for='family-q4.2'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/disagree.png"><p class="eval-title col-sm-9 align-self-center">Disagree</p></div></label><br>
       <input type="radio" name="family-loving" id='family-q4.1' value=1><label class="survey-label container-fluid" for='family-q4.1'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/strong-disagree.png"><p class="eval-title col-sm-9 align-self-center">Strongly Disagree</p></div></label><br>
-
     </div><!--end of family questions-->
 
     <div class="survey-title" id="activities-questions" style="display: none">
@@ -185,7 +183,6 @@
       <input type="radio" name="activities-videogames" id='activities-q4.3' value=3><label class="survey-label container-fluid" for='activities-q4.3'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/agree.png"><p class="eval-title col-sm-9 align-self-center">Agree</p></div></label><br>
       <input type="radio" name="activities-videogames" id='activities-q4.2' value=2><label class="survey-label container-fluid" for='activities-q4.2'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/disagree.png"><p class="eval-title col-sm-9 align-self-center">Disagree</p></div></label><br>
       <input type="radio" name="activities-videogames" id='activities-q4.1' value=1><label class="survey-label container-fluid" for='activities-q4.1'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/strong-disagree.png"><p class="eval-title col-sm-9 align-self-center">Strongly Disagree</p></div></label>
-
     </div><!--end of activities questions-->
 
     <div class="survey-title" id="attention-questions" style="display: none">
@@ -211,7 +208,6 @@
       <input type="radio" name="attention-listener" id='attention-q3.2' value=2><label class="survey-label container-fluid" for='attention-q3.2'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/disagree.png"><p class="eval-title col-sm-9 align-self-center">Disagree</p></div></label><br>
       <input type="radio" name="attention-listener" id='attention-q3.1' value=1><label class="survey-label container-fluid" for='attention-q3.1'><div class="row align-items-center"><img class="col-sm-3 align-self-center agree-icon" src="images/icons/strong-disagree.png"><p class="eval-title col-sm-9 align-self-center">Strongly Disagree</p></div></label><br>
       <br><br>
-
     </div><!--end of attention questions-->
 
     <p id="error-survey"><br>You must fill out all of the questions to feed Coco!</p>
@@ -219,8 +215,7 @@
     <button class="finish-survey" id="next-survey" type="button">Next</button>
     <br>
 
-<!--     <img id="fed_cat" src="images/cat/fed_cat.gif">
- -->    <img id="fed_cat" src="images/cat/feeding.gif">
+    <img id="fed_cat" src="images/cat/feeding.gif">
     <br><br><br><br><br>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -228,5 +223,4 @@
 
   </div>
   </body>
-
 </html>

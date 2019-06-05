@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
 
 <html>
-
+<!-- eval-page.html: This webpage displays a data visualization of the client's
+     responses over the course of a few days. The visualization is a line graph
+     that displays the client's responses for the selected evaluation.
+-->
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -28,21 +31,16 @@
     </div>
   </div>
 
-    
-<div id = 'curve-chart'>
 
-</div>
-<div>
-  <p id = 'legend' style='font-size: 250%; text-align: center'> 1 - Strongly Disagree<br>
-      2 - Disagree <br>
-      3 - Agree <br>
-      4 - Strongly Agree<br>
-  </p>
-  
-</div>
+    <div id = 'curve-chart'></div>
 
-
-    
+    <div>
+      <p id = 'legend' style='font-size: 250%; text-align: center'> 1 - Strongly Disagree<br>
+          2 - Disagree <br>
+          3 - Agree <br>
+          4 - Strongly Agree<br>
+      </p>
+    </div>
 
     <p id="no-chart"  class="greeting3">This page would display the client's response for this evaluation.</p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

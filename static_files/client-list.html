@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
 
 <html>
-
+<!-- client-list.html: This webpage displays the therapist's clients, which they
+     can click to view the client's profile. Additionally, they can add a client
+     to by creating a new client account.
+-->
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -23,54 +26,6 @@
   };
   firebase.initializeApp(firebaseConfig);
 </script>
-
-
-<!--
-<script type="text/javascript">
-
-let clientNames = "";
-let clientUsernames;
-
-$(document).ready(() => { //runs anon fxn when doc is fully loaded
-
-  $.ajax({ //the one parameter that ajax takes has many elements
-      url: "client-list",//the url we want to access
-      type: "GET", //type
-      dataType: "json", //parses json into native js object
-      success: (users) => {//when ajax succeeds
-        clientUsernames = users;
-      }
-  });
-
-  /*clicked items*/
-  $("#see-more").click(() => {
-    clientUsernames.forEach(createClientList);
-    function createClientList(value) {
-      $.ajax({
-        url: "/client-profile/" + value,
-        type: "GET",
-        dataType: "json",
-        success: (currentName) => {
-          clientNames += '<a href="/client-profile.html">';
-          buildClientList(currentName.firstName + " " + currentName.lastName + "</a><br>");
-          $("#client-names").html(clientNames);
-        }
-      });
-    };
-
-    function buildClientList(name) {
-      clientNames += name;
-    };
-
-    //$("#client-names").html(clientNames);
-  }
-  );
-});
-
-</script>
--->
-
-
 
   <body>
 
@@ -98,19 +53,13 @@ $(document).ready(() => { //runs anon fxn when doc is fully loaded
 
     <div>
       <div class="eval-button">
-      <!--<a id="client1" href="client-profile.html">Client Example</a><br></div>-->
-      <div class="orange-button">
-        <!--<a href="#" id="see-more">See more</a>-->
-      </div>
-      <!--<button id="resetButton">Reset</button>-->
-
+      <div class="orange-button"></div>
     </div>
 
     <div>
       <p class="greeting">Clients:</p>
       <div id="client-list" class="">
-        <div id="client-names" class="">
-        </div>
+        <div id="client-names" class=""></div>
       </div>
     </div>
 

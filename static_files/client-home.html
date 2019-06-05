@@ -1,7 +1,12 @@
 <DOCTYPE HTML>
 
 <html>
-
+<!-- client-home.html: This webpage displays the animation of an animal that is
+     either hungry or full depending on if the client has finished the survey
+     (discussed more in the survey.html). Based on date, if the client hasn't
+     finished the survey that day, then the animation will be "hungry". When the
+     client finishes the survey, then animation will appear full.
+-->
   <head>
       <link rel="stylesheet" type="text/css" href="style.css">
       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -29,15 +34,12 @@
 
     <div id="hello-client"><br><br><br>
       <h3 class="greeting" id="client-g"></h3>
-      <!--
-      <img src="" alt=""> Insert animation here!
-      -->
     </div>
 
     <div id="home-hungry">
       <p class="greeting2">Coco is so happy to see you!<br></p>
       <p class="greeting3">He's also very hungry, can you feed him?<br><br></p>
-      
+
       <img id="hungry-image" src="images/cat/hungry.png">
       <div class="orange-button">
         <a id="start-test" href="survey.html">Feed Coco!</a>
@@ -47,10 +49,9 @@
     <div id="home-full">
       <p class="greeting2">Coco is so happy to see you!<br></p>
       <p class="greeting3">He's kind of full right now, but come back tomorrow to feed Coco again!<br></p>
-      
+
       <img id="full-image" class="animated-gif" src="images/cat/happy.gif">
     </div>
-
 
     <a class="signout-button" href="login.html">Sign Out</a>
 

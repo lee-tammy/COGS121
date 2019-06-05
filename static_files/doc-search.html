@@ -1,7 +1,13 @@
 <!DOCTYPE HTML>
 
 <html>
-
+<!-- doc-search.html: This webpage displays the information grabbed from the
+     BetterDoctor API. Since this API displays a list of doctors within the
+     user's location, it asks the user to access their location via Geolocation
+     API. It takes the value of the inputed specialty (and location) and
+     translate that to an HTML url request sent to the BetterDoctor server to
+     receive the data.
+-->
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -32,9 +38,9 @@
 
     <p class="greeting3">This page utilizes BetterDoctors API to find local doctor businesses so that the
     therapist can suggest experts for clients' needs.</p>
-    
+
     <div class="greeting2" style="text-align:left">
-    Specialty: 
+    Specialty:
     <select data-toggle="dropdown" aria-labelledby="dropdownMenuLink" class="specialty btn btn-secondary dropdown-toggle" id="specialty_uid">
 
         <option value = 'family-psychologist'>Family Psychology</option>
