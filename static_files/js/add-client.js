@@ -43,7 +43,7 @@ $(document).ready(()=>{
           
       });
 
-      database.ref('users/' + userName + '/evals').set({
+      database.ref('users/' + userName + '/evals/assigned').set({
         assigned
     });
 
