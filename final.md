@@ -38,8 +38,9 @@ Team Members: Tammy Lee, Allison Patacsil, Amanda Hittelman, Janselle Justo
 https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQE0E/edit?usp=sharing
 
 # File Descriptions
-<b>style.css</b> Styles the icons, text, and layout for all pages.<br>
-<b>localStorage.js</b><br> Allows us to store the current user in local storage.<br>
+<b>style.css</b> Styles the icons, text, and layout for all pages.<br><br>
+
+<b>localStorage.js</b> Allows us to store the current user in local storage.<br><br>
 
 ## Therapist POV
 ### Login
