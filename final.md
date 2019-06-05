@@ -58,7 +58,7 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 <b>eval-page.js</b><br><br>
 <b>style.css</b> Styles the icons, text, and layout for eval-page.html.<br>
 ### Evaluation Selection
-<b>eval-selection.html</b><br><br>
+<b>eval-selection.html</b> The webpage displays a list of evaluation types the user would like to use or change based on that client.<br><br>
 <b>eval-selection.js</b><br><br>
 <b>style.css</b> Styles the icons, text, and layout for eval-selection.html.<br>
 ### Doctor Search
@@ -68,11 +68,11 @@ server. After receiving the data, it displays that information using the Handleb
 <b>style.css</b> Styles the icons, text, and layout for doc-search.html.<br>
 ## Client POV
 ### Client Home
-<b>client-home.html</b><br><br>
+<b>client-home.html</b> The webpage displays the animation of an animal that is either hungry or full depending on if the client has finished the survey (discussed more in the survey.html). Based on date, if the client hasn't finished the survey that day, then the animation will be "hungry". When the client finishes the survey, then animation will appear full.<br><br>
 <b>client-home.js</b><br><br>
 <b>style.css</b> Styles the icons, text, and layout for client-home.html.<br>
 ### Survey
-<b>survey.html</b><br><br>
+<b>survey.html</b> The webpage displays a list of questions the client must answer to feed the animation. After each finished set of evaluation, the client feeds the animal until they have finished their survey. <br><br>
 <b>survey.js</b><br><br>
 <b>style.css</b> Styles the icons and layout for survey.html.<br>
 # 2-Minute Demo Video
