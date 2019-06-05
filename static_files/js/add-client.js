@@ -31,6 +31,7 @@ $(document).ready(()=>{
           assigned.push(evals[i]);
         }
       }
+      
 
       // Getting the information from the text boxes and inserting
       // into firebase
@@ -45,23 +46,24 @@ $(document).ready(()=>{
 
       database.ref('users/' + userName + '/evals/assigned').set({
         assigned
-    });
-
-
-      let clients = [];
-      database.ref('users/' + user + "/clients").once("value", (snapshot)=>{
-        if(snapshot.val() != null){
-          clients = snapshot.val()
-        }
-        clients.push(userName)
-        database.ref('users/' + user).update({
-          clients:clients
-        });
       });
 
-      if(clients.indexOf(userName) !== -1){
+      let clients = [];
+
+      database.ref('users/' + user + '/clients').once("value", (snapshot)=>{
+        if(snapshot.val() != null){
+          clients = snapshot.val().clients
+        }
+        clients.push(userName)
+        database.ref('users/' + user + '/clients').set({
+          clients:clients
+        });
         window.location.href = "client-list.html"
-      }
+      });
+      
+
+     
+      
 
 
     });
