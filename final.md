@@ -54,7 +54,7 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 <b>client-profile.js</b><br><br>
 <b>style.css</b> Styles the icons, text, and layout for client-profile.html.<br>
 ### Evaluation Page
-<b>eval-page.html</b><br><br>
+<b>eval-page.html</b> The webpage displays a data visualization of the client's responses over the course of a few days. The visualization is a line graph that displays the client's responses for each evaluation type.<br><br>
 <b>eval-page.js</b><br><br>
 <b>style.css</b> Styles the icons, text, and layout for eval-page.html.<br>
 ### Evaluation Selection
