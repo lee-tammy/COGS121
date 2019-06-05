@@ -123,7 +123,7 @@ function drawChart(eval, username) {
             curveType: 'function',
             legend: { position: 'bottom' },
             height: screen.height / 2 + 200,
-            width: screen.width,
+            width: 1000,
             vAxis: { gridlines: { count: 4 } }
           };
           

@@ -941,6 +941,14 @@ option {
 	font-size: 50px !important;
 }
 
+/*eval-page*/
+#legend {
+	font-family: 'Raleway';
+}
+
+#curve-chart {
+	width: 100%;
+}
 
 /*client-profile*/
 .client-eval-icon {
