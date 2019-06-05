@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>    
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/betterdoc_api.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+
+  </head>
+
+  <body>
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="therapist-home.html">
+            <img id="menu-back" src="images/menu/back.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <p>aminals</p>
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+      </div>
+    </div>
+
+    <p class="greeting3">This page utilizes BetterDoctors API to find local doctor businesses so that the
+    therapist can suggest experts for clients' needs.</p>
+    
+    <div class="greeting2" style="text-align:left">
+    Specialty: 
+<!--     <select data-toggle="dropdown" style="font-size: 50%" aria-labelledby="dropdownMenuLink" class="btn btn-secondary dropdown-toggle" id="specialty_uid">
+
+        <option style="font-size: 10px !important" id="family-psych" value = 'family-psychologist'>Family Psychology</option>
+        <option style="font-size: 10px !important" id="group-psych" value = 'group-psychotherapy-psychologist'>Group Psychology</option>
+        <option style="font-size: 30px !important" id="neuro" value = 'neuropathologist'>Neuropathology</option>
+        <option style="font-size: 30px !important" id="pediatric" value = 'pediatric-rheumatologist'>Pediatric Rheumatology</option>
+        <option style="font-size: 30px !important" id="rehab" value = 'rehabilitation-psychologist'>Rehabilitation Psychology</option>
+        <option style="font-size: 30px !important" id="sleep-medicine" value = 'sleep-medicine-doctor'>Sleep Medicine</option>
+        <option style="font-size: 30px !important" id="speech-therapy" value = 'speech-therapist'>Speech Therapy</option>
+    </select> -->
+
+<div class="dropdown" id='dr-dropdown'>
+  <button class="dropbtn" id="specialty_uid">Specialty</button>
+  <div class="dropdown-content" id="dr-dropdown-menu">
+    <a id="family-psych" value ='family-psychologist' href="#">Family Psychology</a>
+    <a id="group-psych" value = 'group-psychotherapy-psychologist' href="#">Group Psychology</a>
+    <a id="neuro" value = 'neuropathologist' href="#">Neuropathology</a>
+    <a id="pediatric" value = 'pediatric-rheumatologist' href="#">Pediatric Rheumatology</a>
+    <a id="rehab" value = 'rehabilitation-psychologist' href="#">Rehabilitation Psychology</a>
+    <a id="sleep-medicine" value = 'sleep-medicine-doctor' href="#">Sleep Medicine</a>
+    <a id="speech-therapy" value = 'speech-therapist' href="#">Speech Therapy</a>
+  </div>
+</div>
+        
+        
+        
+        
+    </select>
+
+
+    <br><br>
+    <input style="text-align: center !important" type="button" id="read-button" value="Submit">
+    </div>
+
+    <div id="content-placeholder"></div>
+    <script id="docs-template" type="text/x-handlebars-template">
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Picture</th>
+            </thead>
+            <tbody>
+            {{#data}}
+            <tr>
+                <td><a href="{{attribution_url}}" target="_new">{{profile.first_name}} {{profile.last_name}}</a><br>
+                  <img src="{{ratings.0.image_url_small}}"></img></td>
+                <td>{{profile.title}}</td>
+                <td><img src="{{profile.image_url}}"></img></td>
+            </tr>
+            {{/data}}
+            </tbody>
+        </table>
+    </script>
+
+    <script>
+        $('#family-psych').click(()=>{
+            $("#dr-dropdown-menu").css('display','none');
+            $('#specialty_uid').val ($('#family-psych').val());
+            $('#specialty_uid').text($('#family-psych').val());
+            $('#read-button').click();
+        });
+        $('#dr-dropdown').click(()=>{
+        });
+        $('#group-psych').click(()=>{
+            $("#dr-dropdown-menu").css('display','none');
+            $('#specialty_uid').val ($('#group-psych').val());
+            $('#specialty_uid').text($('#group-psych').val());
+            $('#read-button').click();
+        });
+        $('#neuro').click(()=>{
+            $("#dr-dropdown-menu").css('display','none');
+            $('#specialty_uid').val ($('#neuro').val());
+            $('#specialty_uid').text($('#neuro').val());
+            $('#read-button').click();
+        });
+        $('#pediatric').click(()=>{
+            $("#dr-dropdown-menu").css('display','none');
+            $('#specialty_uid').val ($('#pediatric').val());
+            $('#specialty_uid').text($('#pediatric').val());
+            $('#read-button').click();
+        });
+        $('#rehab').click(()=>{
+            $("#dr-dropdown-menu").css('display','none');
+            $('#specialty_uid').val ($('#rehab').val());
+            $('#specialty_uid').text($('#rehab').val());
+            $('#read-button').click();
+        });
+        $('#sleep-medicine').click(()=>{
+            $("#dr-dropdown-menu").css('display','none');
+            $('#specialty_uid').val ($('#sleep-medicine').val());
+            $('#specialty_uid').text($('#sleep-medicine').val());
+            $('#read-button').click();
+        });
+        $('#speech-therapy').click(()=>{
+            $("#dr-dropdown-menu").css('display','none');
+            $('#specialty_uid').val ($('#speech-therapy').val());
+            $('#specialty_uid').text($('#speech-therapy').val());
+            $('#read-button').click();
+        });
+    </script>
+
+  </body>
+
+</html>

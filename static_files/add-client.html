@@ -60,9 +60,8 @@
 
     <script>
       $('#addClient').click(()=>{
-        console.log("HI");
-        $('#back-button').click();
-        window.location.href = "client-list.html";
+        event.preventDefault();
+        $('#menu-back').click();
       });
     </script>
   </body>

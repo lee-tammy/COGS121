@@ -667,7 +667,7 @@ input[type=text] {
 
 }
 
-#finish-survey {
+.finish-survey {
 	font-family: "Open Sans", serif;
 	background-color: #7CCC70;
 	color: #FCFDFD;
