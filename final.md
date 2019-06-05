@@ -111,4 +111,5 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 <b>user-profile.js</b> Grabs the client's profile information from Firebase and displays it.<br><br>
 
 # 2-Minute Demo Video
-Insert Link HERE
+https://drive.google.com/a/ucsd.edu/file/d/1mwM8l1biB5IaBdZfTRt9XtOMR5tquAgN/view?usp=sharing
+One feature could not be displayed while screen recording.
