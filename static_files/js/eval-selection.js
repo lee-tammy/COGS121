@@ -23,7 +23,6 @@ $(document).ready(()=>{
     let username = segments[segments.length - 1];
 
 
-    
     // create a link to the client's evaluations
     let profileLink = '<a href="client-profile.html#' + username + '"><img id="menu-back" src="images/menu/back.png"></a>';
     $('#back-to-prof').html(profileLink);
@@ -50,7 +49,8 @@ $(document).ready(()=>{
           }
         }
         console.log(assigned);
-        database.ref("users/" + username + "/evals/").set({
+        database.ref("users/" + username + "/evals/assigned/").set({
+        //database.ref("users/" + username + "/").set({
           assigned
         });
 

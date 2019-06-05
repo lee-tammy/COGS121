@@ -20,12 +20,13 @@ $(document).ready(()=>{
     const user = localStorage.getItem("user");
 
     let totalEvalCount = 0;
-    
-    let evalsArr; 
+
+    let evalsArr;
     let data;
 
     // Only display the evaluations that the therapist assigned
-    const key='users/' + user + '/evals';
+    //const key='users/' + user + '/evals';
+    const key='users/' + user + '/evals/assigned';
     database.ref(key).once('value', (snapshot) => {
       data = snapshot.val();
       evalsArr = data.assigned;
@@ -41,7 +42,7 @@ $(document).ready(()=>{
       //if(true){
         //setting date
         const today = new Date();
-        const prettyDate = today.getMonth() + "-" + today.getDate() + "-" + today.getFullYear();
+        const prettyDate = (today.getMonth()+1) + "-" + today.getDate() + "-" + today.getFullYear();
         localStorage.setItem("prettyDate", prettyDate);
 
         document.getElementById(evalsArr[0] + '-questions').style.display = "block";
@@ -49,12 +50,12 @@ $(document).ready(()=>{
         //if only one survey list, show finish survey button (otherwise show continue button)
         if(totalEvalCount == 1)
         {
-          document.getElementById("next-survey").style.display = "none"; 
+          document.getElementById("next-survey").style.display = "none";
           document.getElementById("finish-survey").style.display = "block";
         }
         else
         {
-          document.getElementById("next-survey").style.display = "block"; 
+          document.getElementById("next-survey").style.display = "block";
           document.getElementById("finish-survey").style.display = "none";
         }
 
@@ -65,23 +66,23 @@ $(document).ready(()=>{
       else if(evalCount == totalEvalCount-1)
       {
         document.getElementById("finish-survey").style.display = "block";
-        document.getElementById("next-survey").style.display = "none"; 
+        document.getElementById("next-survey").style.display = "none";
 
         document.getElementById(evalsArr[evalCount-1] + '-questions').style.display = "none";
         document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block";
       }
       //third case (middle of survey)
-      else 
+      else
       {
         document.getElementById("finish-survey").style.display = "none";
-        document.getElementById("next-survey").style.display = "block"; 
+        document.getElementById("next-survey").style.display = "block";
 
         document.getElementById(evalsArr[evalCount-1] + '-questions').style.display = "none";
-        document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block";      
+        document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block";
       }
 
     });
-      
+
 
     /*submit button hit*/
     $("#next-survey").click(()=>{
@@ -96,7 +97,7 @@ $(document).ready(()=>{
 
     $("#finish-survey").click(()=>{
 
-      
+      const key='users/' + user + '/evals';
       addToDatabase();
       localStorage.setItem("currentSurvey", 0);
 
@@ -104,7 +105,7 @@ $(document).ready(()=>{
     });//end of finish-survey click...
 
 function addToDatabase(){
-
+  //database.ref(key).once('value', (snapshot) => {
   // go through each assigned evaluation and grab all the client's responses
           // then put the clien'ts responses in our 'answers' object
   let currentSurveyQ = localStorage.getItem("currentSurvey");
@@ -164,6 +165,7 @@ function addToDatabase(){
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(attentionResponse);
   }
  // finish putting all the client's responses in object 'answers']
+//});
 
 }
 
