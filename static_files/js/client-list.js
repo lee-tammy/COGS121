@@ -28,8 +28,8 @@ $(document).ready(()=>{
           database.ref(key).once('value', (snapshot) => {
             const data = snapshot.val();
             /* create link to the client's profile */
-            let profileLink = '<a class="col-sm client-name" align="center" style="color:#474747;font-size: 50px;" href="client-profile.html#' + clients[i] + '" class="profiles">';
-            $('#client-names').append(profileLink + '<button>'+"<img src='../images/profile-images/kid1.jpeg'><br>" + data.firstName + '<br>' + data.lastName + "</button></a><br>");
+            let profileLink = '<a class="client-name" align="center"" href="client-profile.html#' + clients[i] + '" class="profiles">';
+            $('#client-names').append(profileLink + data.firstName + " " + data.lastName + "</a><br>");
           });
 
         }
