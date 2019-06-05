@@ -947,6 +947,15 @@ option {
 }
 
 #curve-chart {
+}
+
+text {
+    font-family: 'Montserrat Alternates' !important;
+    font-weight: 200 ;
+    font-size: 15px;
+}
+
+g {
 	width: 100%;
 }
 
