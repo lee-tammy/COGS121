@@ -19,6 +19,39 @@ $(document).ready(()=>{
     $('#read-button').click(() => {
       console.log('function clicked');
 
+      //declare geolocation variables
+      var latitude = "";
+      var longitude = "";
+
+      //Geolocation API implemented
+      function showPosition(position) {
+          console.log("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude)
+          window.latitude = String(position.coords.latitude);
+          window.longitude = String(position.coords.longitude);
+      }
+      function showError(error) {
+          switch (error.code) {
+              case error.PERMISSION_DENIED:
+                  x.innerHTML = "User denied the request for Geolocation.";
+                  break;
+              case error.POSITION_UNAVAILABLE:
+                  x.innerHTML = "Location information is unavailable.";
+                  break;
+              case error.TIMEOUT:
+                  x.innerHTML = "The request to get user location timed out.";
+                  break;
+              case error.UNKNOWN_ERR:
+                  x.innerHTML = "An unknown error occurred.";
+                  break;
+          }
+      }
+      if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition)
+      } else {
+          console.log("Geolocation API doesn't supported.")
+      }
+
+
       $(document.getElementById('content-placeholder')).empty();
 
       database.ref('betterdoc').once('value', (snapshot) => {
@@ -26,7 +59,8 @@ $(document).ready(()=>{
         const specialty_uid = document.getElementById("specialty_uid").value;
 
         var resource_url = "https://api.betterdoctor.com/2016-03-01/doctors?specialty_uid=" + specialty_uid
-        + "&location=37.773%2C-122.413%2C100&user_location=37.773%2C-122.413&skip=0&limit=7&user_key=" + data;
+        + "&location=" + window.latitude + "%2C" + window.longitude + "%2C100&user_location=" + window.latitude +
+        "%2C" + window.longitude + "&skip=0&limit=7&user_key=" + data;
 
         $.get(resource_url, function (data) {
             // data: { meta: {<metadata>}, data: {<array[Practice]>} }
