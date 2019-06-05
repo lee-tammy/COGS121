@@ -188,6 +188,8 @@ Purple;
 	margin-right: 10%;
 	height: 150px !important;
 	width: 650px !important;
+    font-family: 'Montserrat Alternates';
+    font-weight: 200;
 
 	border-style: solid;
 	border-width: 10px;
@@ -214,23 +216,19 @@ input[type=radio]{
 	margin-bottom: 5px;
 	margin-top: 5px;
 	/*visibility: hidden;*/ /* CHANGE MADE BY ALLY */
+    font-family: 'Raleway';
+    visibility: hidden; //POTENTIAL ERR
 
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 20px;
 	padding-top: 20px;
-
+	border: none;
 }
 
 input[type=radio]:checked + label{
-    color: #F97C2C;
-
-	background-color: #F8CB43;
-
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	padding-top: 20px;
+    color: #FCFDFD;
+	background-color: #474747;
 	border: none;
 }
 
@@ -323,13 +321,12 @@ input[type=text], input[type=email] {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 35px;
 }
 
 /*general-text*/
 .greeting {
     font-family: 'Nunito';
-	font-weight: 400;
+	font-weight: 800;
 	font-size: 90px;
 	color: #474747;
 
@@ -344,7 +341,7 @@ input[type=text], input[type=email] {
 .greeting2 {
     font-family: 'Raleway';
     font-weight: 400;
-	font-size: 50px;
+	font-size: 65px;
 	text-align: center;
 	color: #474747;
 	margin-left: 15%;
@@ -354,7 +351,7 @@ input[type=text], input[type=email] {
 .greeting3{
     font-family: 'Raleway';
     font-weight: 200;
-	font-size: 300%;
+	font-size: 55px;
 	text-align: center;
 	color: #474747;
 	display: block;
@@ -384,7 +381,7 @@ input[type=text], input[type=email] {
     font-weight: 800;
 	background-color: #F97C2C;
 	color: #FCFDFD;
-	font-size: 600%;
+	font-size: 60px;
 	text-align: center;
 	text-decoration: none;
 
@@ -718,15 +715,16 @@ img.animated-gif {
 }
 
 
-/*client status*/
+/*client status/eval*/
 .eval-button a:link,
 .eval-button a:visited,
 .eval-button a:hover
 .eval-button, .button{
-	font-family: "Open Sans", serif;
+    font-family: 'Montserrat Alternates';
+    font-weight: 900;
 	background-color: #6E88FF;
 	color: #FCFDFD;
-	font-size: 600%;
+	font-size: 50px;
 	text-align: center;
 	text-decoration: none;
 
@@ -749,8 +747,9 @@ img.animated-gif {
 
 /*client-list */
 #add-client-icon{
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
+	margin-top: 10%;
 	margin-left: 80%;
 }
 
@@ -758,7 +757,8 @@ img.animated-gif {
 }
 
 .client-name{
-	font-family: "HelveticaNeue-Thin", serif;
+    font-family: 'Nunito';
+    font-weight: 800;
 	display: block !important;
 	margin-left: auto;
 	margin-right:auto;
@@ -777,7 +777,8 @@ img.animated-gif {
 
 /*adding client page*/
 .adding-client {
-	font-family: "HelveticaNeue-Thin", serif;
+    font-family: 'Nunito';
+    font-weight: 200;
 	font-size: 400%;
 	color: #474747;
 	margin-left: 5%;
@@ -785,7 +786,8 @@ img.animated-gif {
 }
 
 #addClient {
-	font-family: "Open Sans", serif;
+	font-family: 'Nunito';     
+	font-weight: 800;
 	background-color: #7CCC70;
 	color: #FCFDFD;
 	font-size: 100%;
@@ -812,20 +814,27 @@ img.animated-gif {
 
 /*survey*/
 .general-q {
-	font-size: 50px;
-	font-family: "HelveticaNeue-Thin", serif;
+	font-size: 46px;
+    font-family: 'Raleway';
+    font-weight: 400;
 
+    display:block;
+    align-items: center;
+    text-align: center;
 }
 
 #error-survey {
 	color: red;
 	display: none;
-	margin-left: auto;
-	margin-right: auto;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-left: auto!important;
+	margin-right: auto !important;
 }
 
 .finish-survey {
-	font-family: "Open Sans", serif;
+    font-family: 'Nunito';
+    font-weight: 800;
 	background-color: #7CCC70;
 	color: #FCFDFD;
 	font-size: 100%;
@@ -839,13 +848,13 @@ img.animated-gif {
 
 	padding-left: 50px;
 	padding-right: 50px;
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 30px;
 
 	display: none;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-bottom: 75;
 }
 
@@ -900,7 +909,8 @@ img.animated-gif {
 .assigned-evals a:visited,
 .assigned-evals a:hover,
 .assigned-evals{
-	font-family: "Open Sans", serif;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
 	background-color: #6E88FF;
 	color: #FCFDFD;
 	font-size: 50px;
@@ -933,7 +943,7 @@ img.animated-gif {
 
 	font-size: 50px;
 	text-align: center;
-	font-family: "HelveticaNeue-Thin", serif;
+    font-family: 'Raleway';
 
 }
 
@@ -961,7 +971,7 @@ tr {
 
 thead {
 	padding-top: 50px !important;
-	font-family: "Futura", serif;
+    font-family: 'Nunito';  
 	font-size: 70px !important;
 	color: #474747;
 }

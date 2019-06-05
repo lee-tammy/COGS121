@@ -28,10 +28,6 @@ $(document).ready(()=>{
     //const key='users/' + user + '/evals';
     const key='users/' + user + '/evals/assigned';
     database.ref(key).once('value', (snapshot) => {
-      //if on survery page, this means the survey is not done
-      localStorage.setItem("done", 0); //0 is not done
-
-
       data = snapshot.val();
       evalsArr = data.assigned;
       totalEvalCount = evalsArr.length;
@@ -99,42 +95,44 @@ $(document).ready(()=>{
 
     /*submit button hit*/
     $("#next-survey").click(()=>{
-      document.getElementById("next-survey").style.display = "none";
-      document.getElementById("fed_cat").style.display = "block";
-      window.scrollTo(0,document.body.scrollHeight);
+      addToDatabase();
 
-      setTimeout(()=>{
-        addToDatabase();
+      if(localStorage.getItem("errorSurvey") == 0){
+        document.getElementById("next-survey").style.display = "none";
+        document.getElementById("error-survey").style.display = "none";
+        document.getElementById("fed_cat").style.display = "block";
+        window.scrollTo(0,document.body.scrollHeight);
 
-        if(localStorage.getItem("errorSurvey") == 0){
+        setTimeout(()=>{
+
           let count = localStorage.getItem("currentSurvey");
           count++;
           localStorage.setItem("currentSurvey", count);
 
           document.location.reload();
-        }
-      }, 3000);
+        }, 3000);
+      }
     });
 
     $("#finish-survey").click(()=>{
-      document.getElementById("finish-survey").style.display = "none";
-      document.getElementById("fed_cat").style.display = "block";
-      window.scrollTo(0,document.body.scrollHeight);
+      console.log("hello");
+      
+      addToDatabase();
 
-      setTimeout(()=>{
-        const key='users/' + user + '/evals';
+      if(localStorage.getItem("errorSurvey") == 0){
+          document.getElementById("finish-survey").style.display = "none";
+          document.getElementById("error-survey").style.display = "none";
+          document.getElementById("fed_cat").style.display = "block";
+          window.scrollTo(0,document.body.scrollHeight);
 
-        addToDatabase();
+          setTimeout(()=>{
+            localStorage.setItem("currentSurvey", 0);
 
-        if(localStorage.getItem("errorSurvey") == 0){
-          localStorage.setItem("currentSurvey", 0);
+            localStorage.setItem("lastDate"+user, localStorage.getItem("prettyDate"));
 
-          localStorage.setItem("done", 1); //survey done for the day
-          localStorage.setItem("lastDate", localStorage.getItem("prettyDate"));
-
-          window.location.href = "client-home.html"; // bring the client back to the home page
+            window.location.href = "client-home.html"; // bring the client back to the home page
+          },3000);
         }
-      },3000);
     });//end of finish-survey click...
 
 function addToDatabase(){

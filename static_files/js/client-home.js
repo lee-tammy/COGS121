@@ -26,9 +26,9 @@ $(document).ready(()=>{
   const prettyDate = (today.getMonth()+1) + "-" + today.getDate() + "-" + today.getFullYear();
 
   console.log(prettyDate);
-  console.log(localStorage.getItem("lastDate"));
+  console.log(localStorage.getItem("lastDate"+user));
 
-  if(!localStorage.getItem("lastDate") || prettyDate != localStorage.getItem("lastDate"))
+  if(!localStorage.getItem("lastDate"+user) || prettyDate != localStorage.getItem("lastDate"+user))
   {
     document.getElementById("home-hungry").style.display = "block";
     document.getElementById("home-full").style.display = "none";
