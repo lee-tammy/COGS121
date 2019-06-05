@@ -266,7 +266,7 @@ input[type=text], input[type=email] {
 	text-align: center !important;
 	justify-content: center !important;
 	margin-left: auto !important;
-	margin-right: auto !important;		
+	margin-right: auto !important;
 
 	flex-wrap: nowrap !important;
 }
@@ -290,7 +290,7 @@ input[type=text], input[type=email] {
 	text-align: center !important;
 	justify-content: center !important;
 	margin-left: auto !important;
-	margin-right: auto !important;		
+	margin-right: auto !important;
 }
 
 #menu-home {
@@ -696,7 +696,7 @@ input[type=text] {
 	display: none;
 	text-align: center !important;
 	margin-left: auto !important;
-	margin-right: auto !important;	
+	margin-right: auto !important;
 }
 
 #home-full {
@@ -812,7 +812,7 @@ img.animated-gif {
 }
 
 #addClient {
-	font-family: 'Nunito';     
+	font-family: 'Nunito';
 	font-weight: 800;
 	background-color: #7CCC70;
 	color: #FCFDFD;
@@ -912,6 +912,10 @@ img.animated-gif {
 	border-color: #FCFDFD;
 }
 
+option {
+  font-size: 12px;
+}
+
 
 /*eval-selection*/
 #change-evals{
@@ -996,7 +1000,7 @@ tr {
 
 thead {
 	padding-top: 50px !important;
-    font-family: 'Nunito';  
+    font-family: 'Nunito';
 	font-size: 70px !important;
 	color: #474747;
 }
