@@ -1,3 +1,7 @@
+/* client-profile.js: Grabs the client's profile information and assigned
+   evaluations and displays them on the webpage, as well as creating links to
+   the client's evaluation responses.
+*/
 $(document).ready(()=>{
     // Initialize Firebase
 

@@ -1,3 +1,6 @@
+/* therapist-profile.js: Grabs the therapist's profile information from Firebase
+   and displays it.
+*/
 $(document).ready(()=>{
     // Initialize Firebase
 

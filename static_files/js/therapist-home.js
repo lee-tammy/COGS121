@@ -1,6 +1,9 @@
+/* therapist-home.js: Grabs the therapist's name from local storage and displays
+   a personalized greeting.
+*/
 $(document).ready(()=>{
     // Initialize Firebase
-  
+
     var firebaseConfig = {
       apiKey: "AIzaSyD3iiCraOvePJcqCUSQdEITTD0cjG2ArBw",
       authDomain: "taaj-cogs121-project.firebaseapp.com",
@@ -10,11 +13,11 @@ $(document).ready(()=>{
       messagingSenderId: "364492185043",
       appId: "1:364492185043:web:6cab76272a770512"
     };
-  
+
     if (!firebase.apps.length) {
       firebase.initializeApp(firebaseConfig);
     }
     const database = firebase.database();
 
-    $("#therapist-g").html("Hello Dr. " + localStorage.getItem("userDisplayName") + "!");    
+    $("#therapist-g").html("Hello Dr. " + localStorage.getItem("userDisplayName") + "!");
 });

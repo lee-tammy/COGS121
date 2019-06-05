@@ -1,3 +1,7 @@
+/* add-client.js: Creates an account for the new client by putting the entered
+   information into Firebase, as well as adding the new client to the
+   therapist's client list.
+*/
 $(document).ready(()=>{
     // Initialize Firebase
 
@@ -31,7 +35,7 @@ $(document).ready(()=>{
           assigned.push(evals[i]);
         }
       }
-      
+
 
       // Getting the information from the text boxes and inserting
       // into firebase
@@ -41,7 +45,7 @@ $(document).ready(()=>{
           lastName: $('#insertLastName').val(),
           gender: $('#insertGender').val(),
           age: $('#insertAge').val(),
-          
+
       });
 
       database.ref('users/' + userName + '/evals/assigned').set({
@@ -60,10 +64,10 @@ $(document).ready(()=>{
         });
         window.location.href = "client-list.html"
       });
-      
 
-     
-      
+
+
+
 
 
     });

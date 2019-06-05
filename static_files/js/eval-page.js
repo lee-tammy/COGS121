@@ -1,3 +1,7 @@
+/* eval-page.js: Looks for the client name and evaluation in Firebase, gets all
+  the surveys, creates a table(2d array), then inserts it into Google charts
+  linechart constructor then we render the linechart on the screen.
+*/
 // Initialize Firebase
 
 var firebaseConfig = {
@@ -44,10 +48,10 @@ $(document).ready(()=>{
 function drawChart(eval, username) {
   database.ref('users/' + username + '/evals/' + eval).once('value', (snapshot)=>{
     const data = snapshot.val();
-    
+
     if(data != null){
       const arrayToTable = [];
-      
+
       let questions = ['q1', 'q2', 'q3', 'q4', 'q5']
       const firstRow = [];
       let title = ''
@@ -93,7 +97,7 @@ function drawChart(eval, username) {
         questions[1] = 'I like to multitask...'
         questions[2] = 'I am a good listener...'
       }
-      
+
       firstRow.push('')
       for(let i = 0; i < numOfQuestions; i++){
         firstRow.push(questions[i])
@@ -111,13 +115,13 @@ function drawChart(eval, username) {
           for(const i in snapshot.val()){
             row.push(parseInt(snapshot.val()[i]))
           }
-          
+
           arrayToTable.push(row)
           row = []
 
           var d = google.visualization.arrayToDataTable(arrayToTable);
           var chart = new google.visualization.LineChart(document.getElementById('curve-chart'));
-          
+
           var options = {
             title: title,
             curveType: 'function',
@@ -126,7 +130,7 @@ function drawChart(eval, username) {
             width: 980,
             vAxis: { gridlines: { count: 4 } }
           };
-          
+
             chart.draw(d, options);
         });
         document.getElementById("legend").style.display = "block"
@@ -138,14 +142,13 @@ function drawChart(eval, username) {
       document.getElementById("curve-chart").style.display = "none"
       document.getElementById("no-chart").style.display = "block"
     }
-    
-    
+
+
   });
-  
 
 
 
 
-  
+
+
 }
-

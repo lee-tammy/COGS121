@@ -1,3 +1,6 @@
+/* client-list.js: Grab the list of clients from Firebase, and display them on
+   the page with clickable links to their profile.
+*/
 $(document).ready(()=>{
     // Initialize Firebase
 
@@ -20,7 +23,7 @@ $(document).ready(()=>{
       let clients = [];
       database.ref('users/' + user + '/clients').once('value', (snapshot) => {
         clients = snapshot.val().clients;
-      
+
         /* loops through each of the profiles and gets their first and last name */
         for(const i in clients){
 

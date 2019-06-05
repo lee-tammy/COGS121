@@ -1,9 +1,13 @@
+/* login.js: Grabs the username that the user entered and checks to see if that
+   user is in Firebase. If the username is found, the account type is checked
+   and the user is directed either to the therapist or client home page. If the
+   username is invalid, the user is alerted and must enter a valid username to
+   continue.
+*/
 localStorage = window.localStorage;
 
 $(document).ready(()=>{
   // Initialize Firebase
-
-  
   var firebaseConfig = {
     apiKey: "AIzaSyD3iiCraOvePJcqCUSQdEITTD0cjG2ArBw",
     authDomain: "taaj-cogs121-project.firebaseapp.com",
@@ -14,9 +18,7 @@ $(document).ready(()=>{
     appId: "1:364492185043:web:6cab76272a770512"
   };
 
-
-  firebase.initializeApp(firebaseConfig);
-  
+  firebase.initializeApp(firebaseConfig);  
   const database = firebase.database();
 
 $("#sign-up").click(()=>{
@@ -44,8 +46,5 @@ $("#log-in").click(()=>{
     })
   }
 })
-    
+
   });
-
-
-  

@@ -1,3 +1,9 @@
+/* client-home.js: Grabs the username from local storage and displays a
+   personalized greeting. Grabs the date of the most recent evaluations
+  responses from Firebase. If the date is not today, display a "hungry cat",
+  and if the date is today (meaning they filled out their evaluations already),
+  display a "full cat".
+*/
 $(document).ready(()=>{
   // Initialize Firebase
 
@@ -17,7 +23,7 @@ $(document).ready(()=>{
   const database = firebase.database();
   const user = localStorage.getItem("user");
 
-  $("#client-g").html("Hello " + localStorage.getItem("userDisplayName") + "!");    
+  $("#client-g").html("Hello " + localStorage.getItem("userDisplayName") + "!");
 
   const today = new Date();
   const prettyDate = (today.getMonth()+1) + "-" + today.getDate() + "-" + today.getFullYear();

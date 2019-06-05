@@ -1,4 +1,8 @@
-
+/* sign-up.js: Checks to see if the therapist has entered a username that has
+   not been taken yet. If the username is available, a new account will be
+   created and the therapist's entered information will be put in Firebase. If
+   the username is unavailable, alert to enter a different one.
+*/
 $(document).ready(()=>{
     // Initialize Firebase
     var firebaseConfig = {
@@ -10,7 +14,7 @@ $(document).ready(()=>{
       messagingSenderId: "364492185043",
       appId: "1:364492185043:web:6cab76272a770512"
     };
-  
+
 
     if (!firebase.apps.length) {
       firebase.initializeApp(firebaseConfig);
@@ -18,9 +22,9 @@ $(document).ready(()=>{
     const database = firebase.database();
 
     $("#create-acc").click(()=>{
-  
+
       const username = $("#username").val();
-      
+
 
       database.ref('users/' + username).once('value', (snapshot)=>{
         // If username doesn't exist, use it!
@@ -41,7 +45,7 @@ $(document).ready(()=>{
           window.location.href = "login.html";
           // If username does exist, alert the user to use a different one
           }else{
-            
+
             alert("Please use a different username");
           }
         });

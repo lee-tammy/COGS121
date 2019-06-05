@@ -1,3 +1,6 @@
+/* eval-selection.js: Grabs what evaluations the therapist has selected for the
+  client and changes the client's assigned evaluations in Firebase.
+*/
 $(document).ready(()=>{
     // Initialize Firebase
 

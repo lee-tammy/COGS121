@@ -1,3 +1,7 @@
+/* survey.js: Grabs the client's selected responses and inserts into Firebase
+   if all questions were answered. The user must answer all the questions before
+   continuing.
+*/
 $(document).ready(()=>{
     // Initialize Firebase
 
@@ -116,7 +120,7 @@ $(document).ready(()=>{
 
     $("#finish-survey").click(()=>{
       console.log("hello");
-      
+
       addToDatabase();
 
       if(localStorage.getItem("errorSurvey") == 0){

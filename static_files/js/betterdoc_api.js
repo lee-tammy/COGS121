@@ -1,3 +1,9 @@
+/* betterdoc_api.js: The JavaScript file gets the BetterDoctor API key from the
+   Firebase and gets the user's location using the Geolocation API. With the API
+   key and location, it sets up a HTML url request to send to the Better server.
+   After receiving the data, it displays that information using the Handlebars
+   function.
+*/
 $(document).ready(()=>{
     // Initialize Firebase
 

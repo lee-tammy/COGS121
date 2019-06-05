@@ -1,4 +1,5 @@
-
+/* localStorage.js: Allows us to store the current user in local storage.
+*/
 
 var localStorage = window.localStorage;
 //localStorage.clear();
