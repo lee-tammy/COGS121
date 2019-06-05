@@ -667,6 +667,13 @@ input[type=text] {
 
 }
 
+#error-survey {
+	color: red;
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .finish-survey {
 	font-family: "Open Sans", serif;
 	background-color: #7CCC70;

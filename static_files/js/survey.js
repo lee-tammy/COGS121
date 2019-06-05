@@ -45,6 +45,9 @@ $(document).ready(()=>{
         const prettyDate = (today.getMonth()+1) + "-" + today.getDate() + "-" + today.getFullYear();
         localStorage.setItem("prettyDate", prettyDate);
 
+        //setting error survey 
+        localStorage.setItem("errorSurvey", 0);
+
         document.getElementById(evalsArr[0] + '-questions').style.display = "block";
 
         //if only one survey list, show finish survey button (otherwise show continue button)
@@ -70,6 +73,9 @@ $(document).ready(()=>{
 
         document.getElementById(evalsArr[evalCount-1] + '-questions').style.display = "none";
         document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block";
+
+        //setting error survey 
+        localStorage.setItem("errorSurvey", 0);
       }
       //third case (middle of survey)
       else
@@ -78,7 +84,14 @@ $(document).ready(()=>{
         document.getElementById("next-survey").style.display = "block";
 
         document.getElementById(evalsArr[evalCount-1] + '-questions').style.display = "none";
+<<<<<<< HEAD
         document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block";
+=======
+        document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block"; 
+
+        //setting error survey 
+        localStorage.setItem("errorSurvey", 0);     
+>>>>>>> 71ed2a42a2e3b7936e8fbbe752e10c8a4cb2c350
       }
 
     });
@@ -88,20 +101,30 @@ $(document).ready(()=>{
     $("#next-survey").click(()=>{
 
       addToDatabase();
-      let count = localStorage.getItem("currentSurvey");
-      count++;
-      localStorage.setItem("currentSurvey", count);
 
-      document.location.reload();
+      if(localStorage.getItem("errorSurvey") == 0){
+        console.log("Hi");
+        let count = localStorage.getItem("currentSurvey");
+        count++;
+        localStorage.setItem("currentSurvey", count);
+
+        document.location.reload();
+      }
     });
 
     $("#finish-survey").click(()=>{
+<<<<<<< HEAD
 
       const key='users/' + user + '/evals';
+=======
+>>>>>>> 71ed2a42a2e3b7936e8fbbe752e10c8a4cb2c350
       addToDatabase();
-      localStorage.setItem("currentSurvey", 0);
+      
+      if(localStorage.getItem("errorSurvey") == 0){
+        localStorage.setItem("currentSurvey", 0);
 
-      window.location.href = "client-home.html"; // bring the client back to the home page
+        window.location.href = "client-home.html"; // bring the client back to the home page
+      }
     });//end of finish-survey click...
 
 function addToDatabase(){
@@ -117,6 +140,18 @@ function addToDatabase(){
       'well': $("input[name='sleep-well']:checked").val(),
       'sleepy': $("input[name='sleep-sleepy']:checked").val()
     };
+
+    if(!$("input[name='sleep-time']:checked").val() || !$("input[name='sleep-well']:checked").val() || !$("input[name='sleep-sleepy']:checked").val())
+    {
+      document.getElementById("error-survey").style.display = "block"; 
+      localStorage.setItem("errorSurvey", 1);
+      return;
+    }
+    else
+    {
+      localStorage.setItem("errorSurvey", 0);      
+    }
+
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(sleepResponse);
   }
   else if(evalsArr[currentSurveyQ] == 'school'){
@@ -126,6 +161,18 @@ function addToDatabase(){
       'on-time': $("input[name='school-ontime']:checked").val(),
       'teacher': $("input[name='school-teacher']:checked").val()
     };
+
+    if(!$("input[name='school-enjoy']:checked").val() || !$("input[name='school-difficult']:checked").val() || !$("input[name='school-ontime']:checked").val() || !$("input[name='school-teacher']:checked").val())
+    {
+      document.getElementById("error-survey").style.display = "block"; 
+      localStorage.setItem("errorSurvey", 1);
+      return;
+    }
+    else
+    {
+      localStorage.setItem("errorSurvey", 0);      
+    }
+
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(schoolResponse);
   }
   else if(evalsArr[currentSurveyQ] == 'friends'){
@@ -135,6 +182,18 @@ function addToDatabase(){
       'happy': $("input[name='friends-happy']:checked").val(),
       'fight': $("input[name='friends-fight']:checked").val()
     };
+
+    if(!$("input[name='friends-talk']:checked").val() || !$("input[name='friends-many']:checked").val() || !$("input[name='friends-happy']:checked").val() || !$("input[name='friends-fight']:checked").val())
+    {
+      document.getElementById("error-survey").style.display = "block"; 
+      localStorage.setItem("errorSurvey", 1);
+      return;
+    }
+    else
+    {
+      localStorage.setItem("errorSurvey", 0);      
+    }
+
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(friendsResponse);
   }
   else if(evalsArr[currentSurveyQ] == 'family'){
@@ -144,6 +203,18 @@ function addToDatabase(){
       'supportive': $("input[name='family-supportive']:checked").val(),
       'loving': $("input[name='family-loving']:checked").val()
     };
+
+    if(!$("input[name='family-happy']:checked").val() || !$("input[name='family-talk']:checked").val() || !$("input[name='family-supportive']:checked").val() || !$("input[name='family-loving']:checked").val())
+    {
+      document.getElementById("error-survey").style.display = "block"; 
+      localStorage.setItem("errorSurvey", 1);
+      return;
+    }
+    else
+    {
+      localStorage.setItem("errorSurvey", 0);      
+    }
+
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(familyResponse);
   }
   else if(evalsArr[currentSurveyQ] == 'mood'){/* questions to be added later*/}
@@ -154,6 +225,18 @@ function addToDatabase(){
       'tv': $("input[name='activities-tv']:checked").val(),
       'videogames': $("input[name='activities-videogames']:checked").val()
     };
+
+    if(!$("input[name='activities-play']:checked").val() || !$("input[name='activities-read']:checked").val() || !$("input[name='activities-tv']:checked").val() || !$("input[name='activities-videogames']:checked").val())
+    {
+      document.getElementById("error-survey").style.display = "block"; 
+      localStorage.setItem("errorSurvey", 1);
+      return;
+    }
+    else
+    {
+      localStorage.setItem("errorSurvey", 0);      
+    }
+
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(activitiesResponse);
   }
   else if(evalsArr[currentSurveyQ] == 'attention'){
@@ -162,6 +245,18 @@ function addToDatabase(){
       'multitask': $("input[name='attention-multitask']:checked").val(),
       'listener': $("input[name='attention-listener']:checked").val()
     };
+
+    if(!$("input[name='attention-hard']:checked").val() || !$("input[name='attention-multitask']:checked").val() || !$("input[name='attention-listener']:checked").val())
+    {
+      document.getElementById("error-survey").style.display = "block"; 
+      localStorage.setItem("errorSurvey", 1);
+      return;
+    }
+    else
+    {
+      localStorage.setItem("errorSurvey", 0);      
+    }
+
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(attentionResponse);
   }
  // finish putting all the client's responses in object 'answers']
