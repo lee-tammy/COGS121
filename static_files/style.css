@@ -512,13 +512,17 @@ input[type=text], input[type=email] {
 	margin-top: 20px;
 }
 
+.login-obj{
+	display: inline-block;	margin-left: auto;
+	margin-right: auto;
+}
+
 #input{
 	font-size: 250%;
 	color: #474747;
     font-family: 'Raleway';
-	margin-left: 25%;
-	display: inline-block;
 
+	text-align: center;
 }
 
 #user-name-text{
@@ -917,10 +921,9 @@ img.animated-gif {
 
 /*client-profile*/
 .client-eval-icon {
-	height: 50px;
-	width: auto;
-
-	padding-right: 50px;
+	height: 25%;
+	width: 25%;
+	padding-right: 25px;
 }
 
 #list-of-evals {
@@ -935,7 +938,7 @@ img.animated-gif {
     font-weight: 400;
 	background-color: #6E88FF;
 	color: #FCFDFD;
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
 	text-decoration: none;
 
