@@ -45,7 +45,7 @@ $(document).ready(()=>{
         const prettyDate = (today.getMonth()+1) + "-" + today.getDate() + "-" + today.getFullYear();
         localStorage.setItem("prettyDate", prettyDate);
 
-        //setting error survey 
+        //setting error survey
         localStorage.setItem("errorSurvey", 0);
 
         document.getElementById(evalsArr[0] + '-questions').style.display = "block";
@@ -74,7 +74,7 @@ $(document).ready(()=>{
         document.getElementById(evalsArr[evalCount-1] + '-questions').style.display = "none";
         document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block";
 
-        //setting error survey 
+        //setting error survey
         localStorage.setItem("errorSurvey", 0);
       }
       //third case (middle of survey)
@@ -109,8 +109,11 @@ $(document).ready(()=>{
     });
 
     $("#finish-survey").click(()=>{
+
+      const key='users/' + user + '/evals';
+
       addToDatabase();
-      
+
       if(localStorage.getItem("errorSurvey") == 0){
         localStorage.setItem("currentSurvey", 0);
 
@@ -134,13 +137,13 @@ function addToDatabase(){
 
     if(!$("input[name='sleep-time']:checked").val() || !$("input[name='sleep-well']:checked").val() || !$("input[name='sleep-sleepy']:checked").val())
     {
-      document.getElementById("error-survey").style.display = "block"; 
+      document.getElementById("error-survey").style.display = "block";
       localStorage.setItem("errorSurvey", 1);
       return;
     }
     else
     {
-      localStorage.setItem("errorSurvey", 0);      
+      localStorage.setItem("errorSurvey", 0);
     }
 
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(sleepResponse);
@@ -155,13 +158,13 @@ function addToDatabase(){
 
     if(!$("input[name='school-enjoy']:checked").val() || !$("input[name='school-difficult']:checked").val() || !$("input[name='school-ontime']:checked").val() || !$("input[name='school-teacher']:checked").val())
     {
-      document.getElementById("error-survey").style.display = "block"; 
+      document.getElementById("error-survey").style.display = "block";
       localStorage.setItem("errorSurvey", 1);
       return;
     }
     else
     {
-      localStorage.setItem("errorSurvey", 0);      
+      localStorage.setItem("errorSurvey", 0);
     }
 
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(schoolResponse);
@@ -176,13 +179,13 @@ function addToDatabase(){
 
     if(!$("input[name='friends-talk']:checked").val() || !$("input[name='friends-many']:checked").val() || !$("input[name='friends-happy']:checked").val() || !$("input[name='friends-fight']:checked").val())
     {
-      document.getElementById("error-survey").style.display = "block"; 
+      document.getElementById("error-survey").style.display = "block";
       localStorage.setItem("errorSurvey", 1);
       return;
     }
     else
     {
-      localStorage.setItem("errorSurvey", 0);      
+      localStorage.setItem("errorSurvey", 0);
     }
 
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(friendsResponse);
@@ -197,13 +200,13 @@ function addToDatabase(){
 
     if(!$("input[name='family-happy']:checked").val() || !$("input[name='family-talk']:checked").val() || !$("input[name='family-supportive']:checked").val() || !$("input[name='family-loving']:checked").val())
     {
-      document.getElementById("error-survey").style.display = "block"; 
+      document.getElementById("error-survey").style.display = "block";
       localStorage.setItem("errorSurvey", 1);
       return;
     }
     else
     {
-      localStorage.setItem("errorSurvey", 0);      
+      localStorage.setItem("errorSurvey", 0);
     }
 
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(familyResponse);
@@ -219,13 +222,13 @@ function addToDatabase(){
 
     if(!$("input[name='activities-play']:checked").val() || !$("input[name='activities-read']:checked").val() || !$("input[name='activities-tv']:checked").val() || !$("input[name='activities-videogames']:checked").val())
     {
-      document.getElementById("error-survey").style.display = "block"; 
+      document.getElementById("error-survey").style.display = "block";
       localStorage.setItem("errorSurvey", 1);
       return;
     }
     else
     {
-      localStorage.setItem("errorSurvey", 0);      
+      localStorage.setItem("errorSurvey", 0);
     }
 
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(activitiesResponse);
@@ -239,13 +242,13 @@ function addToDatabase(){
 
     if(!$("input[name='attention-hard']:checked").val() || !$("input[name='attention-multitask']:checked").val() || !$("input[name='attention-listener']:checked").val())
     {
-      document.getElementById("error-survey").style.display = "block"; 
+      document.getElementById("error-survey").style.display = "block";
       localStorage.setItem("errorSurvey", 1);
       return;
     }
     else
     {
-      localStorage.setItem("errorSurvey", 0);      
+      localStorage.setItem("errorSurvey", 0);
     }
 
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(attentionResponse);
