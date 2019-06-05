@@ -15,18 +15,12 @@ $(document).ready(()=>{
     firebase.initializeApp(firebaseConfig);
   }
   const database = firebase.database();
-
   const user = localStorage.getItem("user");
-  database.ref("users/" + user).once("value", (snapshot)=>{
-      $("#client-g").html("Hello " + snapshot.val().firstName + "!");
-  });
-    
+
+  $("#client-g").html("Hello " + localStorage.getItem("userDisplayName") + "!");    
 
   const today = new Date();
   const prettyDate = (today.getMonth()+1) + "-" + today.getDate() + "-" + today.getFullYear();
-
-  console.log(prettyDate);
-  console.log(localStorage.getItem("lastDate"+user));
 
   if(!localStorage.getItem("lastDate"+user) || prettyDate != localStorage.getItem("lastDate"+user))
   {

@@ -30,10 +30,12 @@ $("#log-in").click(()=>{
       const info = snapshot.val()
       if(info !== null){
         localStorage.setItem("user", userName.value);
-        if(info.accountType == "therapist"){
 
+        if(info.accountType == "therapist"){
+          localStorage.setItem("userDisplayName", snapshot.val().lastName);
           window.location.href = "therapist-home.html";
         }else{
+          localStorage.setItem("userDisplayName", snapshot.val().firstName);
           window.location.href = "client-home.html";
         }
       }else{

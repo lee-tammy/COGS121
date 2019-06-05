@@ -16,9 +16,5 @@ $(document).ready(()=>{
     }
     const database = firebase.database();
 
-    const user = localStorage.getItem("user");
-    database.ref("users/" + user).once("value", (snapshot)=>{
-        $("#therapist-g").html("Hello Dr. " + snapshot.val().lastName + "!");
-    });
-    
+    $("#therapist-g").html("Hello Dr. " + localStorage.getItem("userDisplayName") + "!");    
 });
