@@ -51,26 +51,31 @@ function drawChart(eval, username) {
     
     let questions = ['q1', 'q2', 'q3', 'q4', 'q5']
     const firstRow = [];
+    let title = ''
     let numOfQuestions = 0
     if(eval == 'sleep'){
+      title = 'Sleep Evaluation'
       numOfQuestions = 3;
       questions[0] = 'I went to sleep at a good time...'
       questions[1] = 'I slept well...'
       questions[2] = 'I was sleepy during the day...'
     }else if(eval == 'friends'){
       numOfQuestions = 5;
+      title = 'Friends Evaluation'
       questions[0] = 'I have friends I can talk to...'
       questions[1] = 'I have many friends...'
       questions[2] = 'I am happy with my friends...'
       questions[3] = 'I am fighting with my friends...'
       questions[4] = 'I chatted with friends after school...'
     }else if(eval == 'family'){
+      title = 'Family Evaluation'
       numOfQuestions = 4;
       questions[0] = 'I am happy with my family...'
       questions[1] = 'I like talking with my family...'
       questions[2] = 'I have a supportive family...'
       questions[3] = 'I have a loving family...'
     }else if(eval == 'activities'){
+      title = 'Activities Evaluation'
       numOfQuestions = 5;
       questions[0] = 'I played outside...'
       questions[1] = 'I like to read books...'
@@ -78,6 +83,7 @@ function drawChart(eval, username) {
       questions[3] = 'I played video games...'
       questions[4] = 'I spent time watching videos on my phone...'
     }else if(eval == 'attention'){
+      title = 'Attention Evaluation'
       numOfQuestions = 5;
       questions[0] = 'I had a hard time paying attention...'
       questions[1] = 'I daydream a lot...'
@@ -90,9 +96,7 @@ function drawChart(eval, username) {
       firstRow.push(questions[i])
     }
     arrayToTable.push(firstRow);
-    console.log(arrayToTable)
-    
-console.log("firstRow", firstRow)
+
     for(let i in Object.keys(data)){
       let row = [];
       const dat = '' + Object.keys(data)[i]
@@ -107,19 +111,20 @@ console.log("firstRow", firstRow)
         arrayToTable.push(row)
         row = []
 
-        
-console.log(arrayToTable)
         var d = google.visualization.arrayToDataTable(arrayToTable);
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
         
         var options = {
-          title: 'Sleep Evaluation',
+          title: title,
           curveType: 'function',
-          legend: { position: 'bottom' }
+          legend: { position: 'bottom' },
+          height: screen.height / 2 + 200,
+          width: screen.width,
+          vAxis: { gridlines: { count: 4 } }
         };
+        
           chart.draw(d, options);
       });
-
       
     }
     

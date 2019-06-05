@@ -84,14 +84,10 @@ $(document).ready(()=>{
         document.getElementById("next-survey").style.display = "block";
 
         document.getElementById(evalsArr[evalCount-1] + '-questions').style.display = "none";
-<<<<<<< HEAD
-        document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block";
-=======
         document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block"; 
 
         //setting error survey 
         localStorage.setItem("errorSurvey", 0);     
->>>>>>> 71ed2a42a2e3b7936e8fbbe752e10c8a4cb2c350
       }
 
     });
@@ -113,11 +109,6 @@ $(document).ready(()=>{
     });
 
     $("#finish-survey").click(()=>{
-<<<<<<< HEAD
-
-      const key='users/' + user + '/evals';
-=======
->>>>>>> 71ed2a42a2e3b7936e8fbbe752e10c8a4cb2c350
       addToDatabase();
       
       if(localStorage.getItem("errorSurvey") == 0){
