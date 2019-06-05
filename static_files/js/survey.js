@@ -96,7 +96,7 @@ $(document).ready(()=>{
 
     $("#finish-survey").click(()=>{
 
-      const key='users/' + user + '/evals';
+      
       addToDatabase();
       localStorage.setItem("currentSurvey", 0);
 
@@ -104,7 +104,7 @@ $(document).ready(()=>{
     });//end of finish-survey click...
 
 function addToDatabase(){
-  database.ref(key).once('value', (snapshot) => {
+
   // go through each assigned evaluation and grab all the client's responses
           // then put the clien'ts responses in our 'answers' object
   let currentSurveyQ = localStorage.getItem("currentSurvey");
@@ -164,7 +164,6 @@ function addToDatabase(){
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(attentionResponse);
   }
  // finish putting all the client's responses in object 'answers']
-});
 
 }
 
