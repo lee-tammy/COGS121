@@ -42,7 +42,7 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 ### Login
 <b>login.html</b> The webpage displays the login form where the therapist or client can log into the web-application to their prospective home pages. There is also the functionality to make and start a therapist account (discussed more in the sign-up.html section).<br><br>
 
-<b>login.js</b> <br><br>
+<b>login.js</b><br><br>
 
 <b>therapist-home.js</b><br><br>
 
@@ -65,7 +65,7 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 ### Client List
 <b>client-list.html</b> The webpage displays the list of clients under the user's account. The webpage also gives the user an opportunity to make an account for new clients (discussed more in the add-client.html section). <br><br>
 
-<b>client-list.js</b><br><br>
+<b>client-list.js</b> Utilizes functions to grab data (user's account's client lists that links to their respective data from evaluations) from Firebase.<br><br>
 
 <b>add-client.js</b><br><br>
 
