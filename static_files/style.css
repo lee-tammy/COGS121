@@ -1,6 +1,99 @@
+/* latin */
 @font-face {
-	font-family: openSans;
-	src: url('https://fonts.googleapis.com/css?family=Open+Sans');
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v22/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfJh1Zyc61YA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Montserrat Alternates ExtraLight'), local('MontserratAlternates-ExtraLight'), url(https://fonts.gstatic.com/s/montserratalternates/v10/mFTiWacfw6zH4dthXcyms1lPpC8I_b0juU0xJIbFB7xG-GNxkg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Alternates Regular'), local('MontserratAlternates-Regular'), url(https://fonts.gstatic.com/s/montserratalternates/v10/mFTvWacfw6zH4dthXcyms1lPpC8I_b0juU0566fQKp5L0g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat Alternates ExtraBold'), local('MontserratAlternates-ExtraBold'), url(https://fonts.gstatic.com/s/montserratalternates/v10/mFTiWacfw6zH4dthXcyms1lPpC8I_b0juU0xTIHFB7xG-GNxkg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwOIpWqZPANqczVs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwIouWqZPANqczVs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v10/XRXW3I6Li01BKofA-seUYevIWzgPDA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v10/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v10/XRXW3I6Li01BKofAksCUYevIWzgPDA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Nunito Black'), local('Nunito-Black'), url(https://fonts.gstatic.com/s/nunito/v10/XRXW3I6Li01BKofAtsGUYevIWzgPDA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /*
 Font Names
@@ -151,7 +244,7 @@ input[type=checkbox]:checked + label{
 }
 
 label {
-	font-family: "Futura", serif!important;
+    font-family: 'Montserrat Alternates';
 	color: #474747;
 
 	border-radius: 30px;
@@ -170,20 +263,36 @@ input[type=text], input[type=email] {
 }
 
 /*General-menu*/
+#menu-row {
+	align-items: center !important;
+	text-align: center !important;
+	justify-content: center !important;
+	margin-left: auto !important;
+	margin-right: auto !important;		
+
+	flex-wrap: nowrap !important;
+}
+
+.col-sm-4 {
+  margin-top: 40px;
+
+}
+
 #menu {
 	width: 100%;
 	height: 230px;
 	background-color: #21C293;
-	font-family: "Futura", serif;
-	font-size: 600%;
+	font-family: "Montserrat Alternates";
+	font-weight: 400 !important;
+	font-size: 100px;
 	color: #FCFDFD;
 
 	flex-wrap: nowrap;
-	padding-top: 30px;
-	margin-bottom: 100px;
-	display: block !important;
-	margin-left: auto;
-	margin-right: auto;
+	align-items: center !important;
+	text-align: center !important;
+	justify-content: center !important;
+	margin-left: auto !important;
+	margin-right: auto !important;		
 }
 
 #menu-home {
@@ -191,17 +300,22 @@ input[type=text], input[type=email] {
 	width: auto;
 
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
 	margin-top: 15px;
 }
 
 #menu-profile {
 	height: 100px;
+	width: auto;
+
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
 }
 
 #menu-back {
@@ -214,8 +328,9 @@ input[type=text], input[type=email] {
 
 /*general-text*/
 .greeting {
-	font-family: "Futura-Medium";
-	font-size: 600%;
+    font-family: 'Nunito';
+	font-weight: 400;
+	font-size: 90px;
 	color: #474747;
 
 	margin-bottom: 100px;
@@ -227,8 +342,9 @@ input[type=text], input[type=email] {
 }
 
 .greeting2 {
-	font-family: "HelveticaNeue-Thin", serif;
-	font-size: 400%;
+    font-family: 'Raleway';
+    font-weight: 400;
+	font-size: 50px;
 	text-align: center;
 	color: #474747;
 	margin-left: 15%;
@@ -236,8 +352,9 @@ input[type=text], input[type=email] {
 }
 
 .greeting3{
-	font-family: "HelveticaNeue", serif;
-	font-size: 400%;
+    font-family: 'Raleway';
+    font-weight: 200;
+	font-size: 300%;
 	text-align: center;
 	color: #474747;
 	display: block;
@@ -248,7 +365,7 @@ input[type=text], input[type=email] {
 }
 
 .greeting4{
-	font-family: "HelveticaNeue", serif;
+	font-family: "Raleway";
 	font-size: 65px;
 	text-align: center;
 	color: #474747;
@@ -263,7 +380,8 @@ input[type=text], input[type=email] {
 .orange-button a:visited,
 .orange-button a:hover
 .orange-button, .button{
-	font-family: "Open Sans" !important;
+    font-family: 'Nunito';
+    font-weight: 800;
 	background-color: #F97C2C;
 	color: #FCFDFD;
 	font-size: 600%;
@@ -295,7 +413,8 @@ input[type=text], input[type=email] {
 	color: #474747;
 	font-size: 300%;
 	text-align: center;
-	font-family: "Futura", serif;
+    font-family: 'Nunito';
+    font-weight: 900;
 	text-decoration: none;
 
 	border-style: solid;
@@ -323,7 +442,8 @@ input[type=text], input[type=email] {
 }
 
 .profile-text {
-	font-family: "Futura", serif;
+    font-family: 'Montserrat Alternates';
+    font-weight: 800;
 	font-size: 75px;
 	display: inline;
 	margin-left: 10%;
@@ -331,7 +451,8 @@ input[type=text], input[type=email] {
 }
 
 .profile-text-insert {
-	font-family: "HelveticaNeue", serif;
+	font-family: "Raleway";
+	font-weight: 400;
 	font-size: 60px;
 	display: inline;
 
@@ -351,13 +472,15 @@ input[type=text], input[type=email] {
 }
 
 #login-welcome{
-	font-family: "Futura", serif;
+    font-family: 'Nunito';
+    font-weight: 800;
 	font-size: 500%;
 
 }
 
 #login-aminals{
-	font-family: "Futura", serif;
+    font-family: 'Montserrat Alternates';
+    font-weight: 800;
 	color: #FCFDFD;
 	font-size: 1000%;
 
@@ -373,17 +496,19 @@ input[type=text], input[type=email] {
 #input{
 	font-size: 250%;
 	color: #474747;
-	font-family: "Helvetica", serif;
+    font-family: 'Raleway';
 	margin-left: 25%;
 	display: inline-block;
 
 }
 
 #user-name-text{
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
     padding: 0;
-   	font-family: "Futura", serif;
+   	font-family: "Nunito", serif;
+   	font-weight: 200;
    	color: #FCFDFD;
    	font-size: 100px;
 
@@ -401,7 +526,8 @@ input[type=text], input[type=email] {
 	border-radius: 30px;
 	border-color: #FCFDFD;
 	background-color: 	#71D0D7;
-	font-family: "Futura", serif;
+   	font-family: "Nunito", serif;
+   	font-weight: 900;
 	font-size: 60px;
 	color: white;
 
@@ -414,7 +540,8 @@ input[type=text], input[type=email] {
 
 .signup-button {
 	background-color: 	#71D0D7;
-	font-family: "Futura", serif;
+   	font-family: "Nunito", serif;
+   	font-weight: 400;
 	font-size: 45px;
 	color: white;
 	outline: none;
@@ -429,10 +556,9 @@ input[type=text], input[type=email] {
 }
 
 input[type=text] {
-	font-family: "HelveticaNueue", serif;
+    font-family: 'Montserrat Alternates';
 	font-size: 50px;
 	color: #474747;
-
 }
 
 .login-button a:link,
@@ -442,7 +568,8 @@ input[type=text] {
 	color: #FCFDFD !important;
 	font-size: 800% !important;
 	text-align: center !important;
-	font-family: "Futura", serif !important;
+   	font-family: "Nunito", serif;
+   	font-weight: 900;
 	text-decoration: none !important;
 
 	border-style: solid !important;
@@ -467,7 +594,8 @@ input[type=text] {
 	background-color: #474747;
 	font-size: 80% !important;
 	text-align: center !important;
-	font-family: "Futura", serif !important;
+   	font-family: "Nunito", serif;
+   	font-weight: 900;
 	text-decoration: none !important;
 
 	border-style: solid !important;
@@ -502,13 +630,15 @@ input[type=text] {
 .therapist-home-button a:visited,
 .therapist-home-button a:hover
 .therapist-home-button, .button{
-	font-family: "Open Sans", serif;
-	font-size: 325%;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+	font-size: 45px;
 	text-decoration: none;
 	color: #FCFDFD;
 	width: 1000px;
 	padding-left: 25px;
 	display: block!important;
+	text-align: center !important
 }
 
 
@@ -539,17 +669,37 @@ input[type=text] {
 
 
 /* Client Home */
+#home-hungry{
+	display: none;
+	text-align: center !important;
+	margin-left: auto !important;
+	margin-right: auto !important;	
+}
+
+#home-full {
+	display: none;
+	text-align: center !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
 
 #hungry-image {
-	width: 50%;
-	align-items: center !important;
-	margin-left:  20% !important;
-	margin-right: 20% !important;
+	width: 800px !important;
+	height: auto !important;}
+
+#full-image{
+	width: 800px !important;
+	height: auto !important;
+}
+
+img.animated-gif {
+
 }
 
 /* sign-up */
 .signup {
-	font-family: "HelveticaNeue-Thin", serif;
+    font-family: 'Montserrat Alternates';
+    font-weight: 200;
 	font-size: 400%;
 	color: #474747;
 	margin-left: 5%;
@@ -699,6 +849,14 @@ input[type=text] {
 	margin-bottom: 75;
 }
 
+#fed_cat {
+	width: 800px !important;
+	height: auto !important;
+
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .survey-title {
 	/*display: block !important;*/ /* CHANGE MADE BY ALLY */
