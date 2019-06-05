@@ -19,7 +19,7 @@ Team Members: Tammy Lee, Allison Patacsil, Amanda Hittelman, Janselle Justo
 6. Implemented Survey functions noted in survey.js
 
 ### Amanda Hittleman
-1. Storboard #1
+1. Storyboard #1
 2. Ideation Research
 3. Write-up for Milestones
 4. In charge of the UI and div placements for all interfaces
@@ -42,7 +42,7 @@ https://docs.google.com/presentation/d/1RXfkE79YVQvYa7ZI-yiWeymH25Ucy1ngMUmZwXiQ
 ### Login
 <b>login.html</b> The webpage displays the login form where the therapist or client can log into the web-application to their prospective home pages. There is also the functionality to make and start a therapist account (discussed more in the sign-up.html section).<br><br>
 
-<b>login.js</b><br><br>
+<b>login.js</b> <br><br>
 
 <b>therapist-home.js</b><br><br>
 
