@@ -462,25 +462,45 @@ input[type=text], input[type=email] {
 }
 
 /*Login_Page*/
+#login-title {
+
+}
+
 #login-background {
-	background: linear-gradient(180deg, #F8CB43 20%, #71D0D7 20%);
+/*	background: linear-gradient(180deg, #F8CB43 25%, #71D0D7 25%);
 	background-repeat: no-repeat;
-	background-attachment:fixed;
+	background-attachment:fixed;*/
+
+	background-color: #71D0D7;
 }
 
 #login-welcome{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 30px;
+	display: block;
+
     font-family: 'Nunito';
     font-weight: 800;
 	font-size: 500%;
+	color: #5c5f63;
+	background-color: #F8CB43;
 
 }
 
-#login-aminals{
+#login-coco{
+	padding-left: 10%;
+	padding-right: 10%;
+	display: inline-block;
+	padding-top: 0px !important;
+	margin-top: 0px ! important;
+	line-height:200px;
+
     font-family: 'Montserrat Alternates';
     font-weight: 800;
 	color: #FCFDFD;
-	font-size: 1000%;
-
+	font-size: 250px;
 }
 
 #login-image{
@@ -488,6 +508,8 @@ input[type=text], input[type=email] {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 5%;
+	margin-top: 20px;
 }
 
 #input{
