@@ -112,7 +112,7 @@ function addToDatabase(){
 
   if(evalsArr[currentSurveyQ] == 'sleep'){
     sleepResponse = {
-      'time': $("input[name='sleep-time']").val(),
+      'time': $("input[name='sleep-time']:checked").val(),
       'well': $("input[name='sleep-well']:checked").val(),
       'sleepy': $("input[name='sleep-sleepy']:checked").val()
     };
