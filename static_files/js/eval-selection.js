@@ -29,7 +29,7 @@ $(document).ready(()=>{
 
 
     // Displays the evaluations that are currently assigned to the client
-    const key='users/' + username + '/evals';
+    const key='users/' + username + '/evals/assigned/';
     database.ref(key).once('value', (snapshot) => {
       const data = snapshot.val();
       console.log(data.assigned);
@@ -40,7 +40,7 @@ $(document).ready(()=>{
     // Change the evaluations that are assigned to the client
     $("#change-evals").click(()=>{
         console.log('hi');
-        let evals = ['sleep', 'school', 'friends', 'family', 'mood', 'activities', 'attention'];
+        let evals = ['sleep', 'school', 'friends', 'family', 'activities', 'attention'];
         let assigned = [];
         for(i = 0; i < evals.length; i++){
           let checked = $("input[value='" + evals[i] + "']:checked");

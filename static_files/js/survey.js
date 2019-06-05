@@ -84,10 +84,10 @@ $(document).ready(()=>{
         document.getElementById("next-survey").style.display = "block";
 
         document.getElementById(evalsArr[evalCount-1] + '-questions').style.display = "none";
-        document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block"; 
+        document.getElementById(evalsArr[evalCount] + '-questions').style.display = "block";
 
-        //setting error survey 
-        localStorage.setItem("errorSurvey", 0);     
+        //setting error survey
+        localStorage.setItem("errorSurvey", 0);
       }
 
     });
@@ -211,7 +211,6 @@ function addToDatabase(){
 
     database.ref('users/' + user + '/evals/' + evalsArr[currentSurveyQ] + '/' + prettyDate).set(familyResponse);
   }
-  else if(evalsArr[currentSurveyQ] == 'mood'){/* questions to be added later*/}
   else if(evalsArr[currentSurveyQ] == 'activities'){
     activitiesResponse = {
       'play': $("input[name='activities-play']:checked").val(),
